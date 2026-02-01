@@ -1,4 +1,22 @@
-/* Diabetes Guide — Enhanced Visual Styles with Animations */
+/* SugarWise — Enhanced Visual Styles with Animations */
+
+/* ---- SKIP LINK (Accessibility) ---- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 0 0 var(--radius) var(--radius);
+  z-index: 10000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
 :root {
   --primary: #1a7a5a;
   --primary-dark: #145e45;

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aravindcleaerr.github.io/diabetes-guide/sitemap.xml
