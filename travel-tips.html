@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Travel Tips — SugarWise</title><link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg"><meta property="og:type" content="website"><meta property="og:site_name" content="SugarWise"><meta property="og:url" content="https://aravindcleaerr.github.io/diabetes-guide/travel-tips.html"><meta property="og:description" content="Free educational diabetes management guide. Not medical advice."></head><body>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#1a7a5a"><meta property="og:type" content="website"><meta property="og:site_name" content="SugarWise"><meta property="og:url" content="https://aravindcleaerr.github.io/diabetes-guide/travel-tips.html"><meta property="og:description" content="Free educational diabetes management guide. Not medical advice."></head><body>
 <a href="#main" class="skip-link">Skip to content</a>
 <nav class="navbar"><div class="navbar-inner"><a class="brand" href="index.html">SugarWise</a><a class="home-link" href="index.html">All Topics</a></div></nav>
 <div class="container" id="main" role="main">
@@ -185,8 +185,12 @@
 <div class="disclaimer">This content is for educational purposes only and does not replace professional medical advice. The creators of SugarWise are not medical professionals. Do not start, stop, or change any medication without consulting your doctor. In case of emergency, call 112 (India) or your local emergency number. <a href="terms-of-use.html">Read full Terms of Use &amp; Medical Disclaimer</a></div>
 <div class="privacy-notice">SugarWise does not use cookies, collect personal data, or track users.</div>
 <div class="footer"><span class="ai-badge">AI-Assisted Content</span><br>SugarWise &bull; Comprehensive Diabetes Management Companion &bull; <a href="terms-of-use.html">Terms of Use</a> &bull; Last updated: January 2026</div>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">&#9790;</button>
 <button class="scroll-top" aria-label="Scroll to top" id="scrollTop" title="Back to top">&uarr;</button>
 <script>
 var sb=document.getElementById('scrollTop');window.addEventListener('scroll',function(){sb.classList.toggle('visible',window.scrollY>400)});sb.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
 </script>
-</body></html>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}
+(function(){var t=document.getElementById('themeToggle');var saved=localStorage.getItem('theme');if(saved){document.documentElement.setAttribute('data-theme',saved);t.textContent=saved==='dark'?'\u2600':'\u263E';}t.addEventListener('click',function(){var d=document.documentElement.getAttribute('data-theme')==='dark'?'':'dark';document.documentElement.setAttribute('data-theme',d);localStorage.setItem('theme',d);t.textContent=d==='dark'?'\u2600':'\u263E';});})();
+</script></body></html>

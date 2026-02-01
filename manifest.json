@@ -1,0 +1,19 @@
+{
+  "name": "SugarWise — Diabetes Management Companion",
+  "short_name": "SugarWise",
+  "description": "Free educational diabetes management guide. Not medical advice.",
+  "start_url": "/diabetes-guide/",
+  "scope": "/diabetes-guide/",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#1a7a5a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -921,6 +921,97 @@ tr:last-child td { border-bottom: none; }
   .page-header h1 { font-size: 1.9rem; }
 }
 
+/* ---- DARK MODE TOGGLE ---- */
+.theme-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 2px solid var(--border);
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ---- DARK MODE ---- */
+[data-theme="dark"] {
+  --bg: #1a1a2e;
+  --card-bg: #16213e;
+  --text: #e2e8f0;
+  --text-light: #94a3b8;
+  --border: #2d3748;
+  --primary-light: #1a3a2e;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.4);
+}
+[data-theme="dark"] .navbar {
+  background: linear-gradient(135deg, #0f3d2e 0%, #1a5240 100%);
+}
+[data-theme="dark"] .hero {
+  background: linear-gradient(-45deg, #0f3d2e, #1a5240, #145e45, #0d4a38);
+}
+[data-theme="dark"] .section,
+[data-theme="dark"] .card-link {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+[data-theme="dark"] .disclaimer {
+  background: linear-gradient(135deg, #2d1f00 0%, #3d2b00 100%);
+  border-color: #5a4000;
+  color: #fbbf24;
+}
+[data-theme="dark"] .danger {
+  background: linear-gradient(135deg, #2d0f0f 0%, #3d1515 100%);
+  border-color: #7f1d1d;
+  color: #fca5a5;
+}
+[data-theme="dark"] .warning {
+  background: linear-gradient(135deg, #2d1f00 0%, #3d2b00 100%);
+  border-color: #92400e;
+  color: #fcd34d;
+}
+[data-theme="dark"] .note {
+  background: linear-gradient(135deg, #0f1d2d 0%, #152a3d 100%);
+  border-color: #1e40af;
+  color: #93c5fd;
+}
+[data-theme="dark"] .tip {
+  background: linear-gradient(135deg, #0f2d1a 0%, #153d22 100%);
+  border-color: #166534;
+  color: #86efac;
+}
+[data-theme="dark"] .search-box input {
+  background: var(--card-bg);
+  color: var(--text);
+  border-color: var(--border);
+}
+[data-theme="dark"] .privacy-notice {
+  background: var(--primary-light);
+  color: var(--text-light);
+}
+[data-theme="dark"] .stats-bar .stat-card {
+  background: var(--card-bg);
+}
+[data-theme="dark"] .page-nav a {
+  background: var(--card-bg);
+  color: var(--text);
+}
+[data-theme="dark"] .gauge-label {
+  color: var(--text-light);
+}
+
 /* ---- PRINT STYLES ---- */
 @media print {
   .navbar, .page-nav, .scroll-top, .search-box { display: none; }
