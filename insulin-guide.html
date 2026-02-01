@@ -1,0 +1,341 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Insulin Guide — Diabetes Guide</title><link rel="stylesheet" href="styles.css"></head><body>
+<nav class="navbar"><div class="navbar-inner"><a class="brand" href="index.html">Diabetes Guide</a><a class="home-link" href="index.html">All Topics</a></div></nav>
+<div class="container">
+<div class="page-header"><h1>Insulin Guide</h1><p>Types of insulin, injection technique, dosing strategies, storage, delivery devices, and practical tips</p></div>
+
+<div class="illus">
+<svg width="300" height="110" viewBox="0 0 300 110" xmlns="http://www.w3.org/2000/svg">
+<!-- Insulin pen -->
+<rect x="40" y="40" width="140" height="20" rx="5" fill="#1a7a5a"/>
+<rect x="40" y="40" width="45" height="20" rx="5 0 0 5" fill="#145e45"/>
+<rect x="180" y="46" width="30" height="8" rx="2" fill="#64748b"/>
+<rect x="210" y="48" width="15" height="4" rx="1" fill="#999"/>
+<!-- Dose window -->
+<rect x="100" y="44" width="20" height="12" rx="2" fill="white" stroke="#145e45" stroke-width="1"/>
+<text x="110" y="54" text-anchor="middle" font-size="8" fill="#145e45" font-weight="700">12u</text>
+<!-- Insulin drop animation -->
+<circle cx="228" cy="52" r="3" fill="#1a7a5a">
+  <animate attributeName="cy" values="52;70;52" dur="2s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+</circle>
+<!-- Action profile curve -->
+<text x="150" y="95" text-anchor="middle" font-size="9" fill="#64748b">Insulin Pen &amp; Delivery</text>
+</svg>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x2753;</span> Why Insulin?</h2>
+<p>Insulin is a life-saving hormone that is absolutely essential for people with Type 1 diabetes and is frequently needed by people with Type 2 diabetes as the disease progresses. Insulin therapy is indicated in the following situations:</p>
+<ul>
+<li><strong>All patients with Type 1 diabetes</strong> — from the time of diagnosis, lifelong.</li>
+<li><strong>Type 2 diabetes</strong> when oral/non-insulin medications cannot achieve glycemic targets.</li>
+<li><strong>Type 2 diabetes at diagnosis</strong> if HbA1c is very high (&ge; 10%) or the patient is symptomatic (polyuria, polydipsia, weight loss).</li>
+<li><strong>Gestational diabetes</strong> when diet and exercise are insufficient.</li>
+<li><strong>Hospitalized patients</strong> with hyperglycemia (insulin is the preferred inpatient glucose-lowering therapy).</li>
+<li><strong>During acute illness, surgery, or DKA/HHS</strong> — insulin is required for metabolic stabilization.</li>
+</ul>
+
+<div class="note">
+<strong>Important:</strong> Needing insulin is NOT a personal failure. In T2D, it reflects the natural decline in beta-cell function over time. Starting insulin when needed leads to better outcomes and should not be delayed due to fear or stigma.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F489;</span> Types of Insulin</h2>
+
+<div class="info-cards">
+<div class="info-card"><span class="ic-icon">&#x26A1;</span><div class="ic-title">Rapid-Acting</div><div class="ic-text">Onset 10-20 min &bull; Peak 1-3 h &bull; Mealtime bolus</div></div>
+<div class="info-card"><span class="ic-icon">&#x1F551;</span><div class="ic-title">Long-Acting</div><div class="ic-text">Onset 1-2 h &bull; Flat profile &bull; Once daily basal</div></div>
+<div class="info-card"><span class="ic-icon">&#x1F31F;</span><div class="ic-title">Ultra-Long</div><div class="ic-text">Degludec &bull; 42+ h duration &bull; Flexible timing</div></div>
+<div class="info-card"><span class="ic-icon">&#x1F500;</span><div class="ic-title">Premixed</div><div class="ic-text">Basal + bolus combined &bull; Simplified regimens</div></div>
+</div>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Category</th><th>Examples</th><th>Onset</th><th>Peak</th><th>Duration</th><th>Typical Use</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Rapid-Acting</strong></td><td>Lispro (Humalog), Aspart (NovoRapid/NovoLog), Glulisine (Apidra)</td><td>10–20 min</td><td>1–3 hours</td><td>3–5 hours</td><td>Bolus (mealtime) insulin; correction doses</td></tr>
+<tr><td><strong>Ultra-Rapid-Acting</strong></td><td>Faster aspart (Fiasp), Lispro-aabc (Lyumjev)</td><td>2–5 min</td><td>0.5–2 hours</td><td>3–5 hours</td><td>Bolus insulin; slightly faster onset than standard rapid</td></tr>
+<tr><td><strong>Short-Acting (Regular)</strong></td><td>Regular insulin (Humulin R, Novolin R)</td><td>30–60 min</td><td>2–4 hours</td><td>6–8 hours</td><td>Mealtime (if rapid unavailable); IV use in hospitals</td></tr>
+<tr><td><strong>Intermediate-Acting</strong></td><td>NPH (Humulin N, Novolin N)</td><td>1–3 hours</td><td>4–12 hours</td><td>12–18 hours</td><td>Basal coverage (twice daily); often in premixed formulations</td></tr>
+<tr><td><strong>Long-Acting</strong></td><td>Glargine U100 (Lantus, Basaglar), Glargine U300 (Toujeo), Detemir (Levemir)</td><td>1–2 hours</td><td>Minimal/flat</td><td>20–24+ hours</td><td>Basal insulin (once or twice daily)</td></tr>
+<tr><td><strong>Ultra-Long-Acting</strong></td><td>Degludec (Tresiba)</td><td>1–2 hours</td><td>Flat (no peak)</td><td>42+ hours</td><td>Basal insulin (once daily); very stable; flexible timing</td></tr>
+<tr><td><strong>Premixed</strong></td><td>70/30 (NPH/Regular), 75/25 (Lispro mix), 50/50, Ryzodeg (Degludec/Aspart)</td><td>Varies</td><td>Dual peaks</td><td>Varies</td><td>Simplified regimens; covers basal + mealtime needs</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Insulin Action Profiles — Timeline</h3>
+<div class="timeline">
+<div class="timeline-item"><div class="timeline-title">Ultra-Rapid (Fiasp, Lyumjev)</div><div class="timeline-text">Onset 2-5 min | Peak 0.5-2 h | Duration 3-5 h</div></div>
+<div class="timeline-item"><div class="timeline-title">Rapid-Acting (Lispro, Aspart)</div><div class="timeline-text">Onset 10-20 min | Peak 1-3 h | Duration 3-5 h</div></div>
+<div class="timeline-item"><div class="timeline-title">Short-Acting (Regular)</div><div class="timeline-text">Onset 30-60 min | Peak 2-4 h | Duration 6-8 h</div></div>
+<div class="timeline-item"><div class="timeline-title">Long-Acting (Glargine, Detemir)</div><div class="timeline-text">Onset 1-2 h | Minimal peak | Duration 20-24+ h</div></div>
+<div class="timeline-item"><div class="timeline-title">Ultra-Long (Degludec)</div><div class="timeline-text">Onset 1-2 h | Flat — no peak | Duration 42+ h</div></div>
+</div>
+
+<div class="tip">
+<strong>Concentration Matters:</strong> Most insulin is U-100 (100 units/mL). Concentrated insulins include: U-200 (Tresiba), U-300 (Toujeo), and U-500 (Humulin R U-500 for severely insulin-resistant patients). Always verify the concentration to avoid dosing errors.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x2696;&#xFE0F;</span> Basal-Bolus Concept</h2>
+<p>The basal-bolus regimen is considered the gold standard for insulin therapy, as it most closely mimics the body's natural insulin secretion pattern:</p>
+
+<h3>Basal Insulin</h3>
+<ul>
+<li>Provides a low, steady level of insulin throughout the day and night.</li>
+<li>Controls glucose between meals and during sleep.</li>
+<li>Suppresses hepatic glucose production.</li>
+<li>Typically: one injection of long-acting (glargine, degludec) or two injections of intermediate-acting (NPH).</li>
+<li>Accounts for approximately <strong>40–50%</strong> of total daily insulin dose.</li>
+</ul>
+
+<h3>Bolus (Mealtime) Insulin</h3>
+<ul>
+<li>Rapid-acting insulin taken before each meal to cover the glucose rise from carbohydrates.</li>
+<li>Dose is based on <strong>carbohydrate counting</strong>: an insulin-to-carb ratio (ICR) tells you how many grams of carbs are covered by 1 unit of insulin (e.g., 1:10 means 1 unit per 10 grams of carbs).</li>
+<li>A <strong>correction factor</strong> (also called insulin sensitivity factor or ISF) is used to correct above-target glucose: it tells you how much 1 unit of insulin will lower your glucose (e.g., 1:50 means 1 unit lowers glucose by 50 mg/dL).</li>
+<li>Accounts for approximately <strong>50–60%</strong> of total daily insulin dose, divided across meals.</li>
+</ul>
+
+<h3>Bolus Dose Calculation Example</h3>
+<p>Patient with ICR = 1:10 and ISF = 1:40, target glucose = 120 mg/dL:</p>
+<ul>
+<li>Pre-meal glucose: 200 mg/dL</li>
+<li>Planned carb intake: 60 grams</li>
+<li>Carb dose: 60 / 10 = <strong>6 units</strong></li>
+<li>Correction dose: (200 - 120) / 40 = <strong>2 units</strong></li>
+<li>Total bolus: 6 + 2 = <strong>8 units</strong></li>
+</ul>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F680;</span> Starting Insulin — Common Approaches</h2>
+
+<h3>For Type 2 Diabetes (Adding Basal Insulin to Oral Therapy)</h3>
+<ul>
+<li><strong>Starting dose:</strong> 10 units/day OR 0.1–0.2 units/kg/day of long-acting insulin, taken at the same time each day (usually bedtime or morning).</li>
+<li><strong>Titration:</strong> Adjust by 2–4 units every 3–7 days based on fasting glucose readings. Target fasting glucose: 80–130 mg/dL.</li>
+<li><strong>Continue oral medications</strong> (metformin, SGLT2i, GLP-1 RA) alongside basal insulin. Sulfonylureas may be reduced or stopped when mealtime insulin is added.</li>
+</ul>
+
+<h3>For Type 1 Diabetes (Full Basal-Bolus)</h3>
+<ul>
+<li><strong>Total daily dose (TDD):</strong> Typically 0.4–0.6 units/kg/day initially (higher in puberty, lower in honeymoon phase).</li>
+<li>50% as basal, 50% divided among meals as bolus.</li>
+<li>ICR and ISF are adjusted based on glucose monitoring data.</li>
+</ul>
+
+<h3>Sliding Scale Insulin</h3>
+<p>A sliding scale provides correction-only rapid-acting insulin based on pre-meal glucose readings. While still used in hospital settings, it is a reactive approach and is <strong>not recommended as a standalone outpatient regimen</strong>. It does not address basal insulin needs or anticipate carbohydrate intake.</p>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Blood Glucose (mg/dL)</th><th>Low-Dose Scale</th><th>Medium-Dose Scale</th><th>High-Dose Scale</th></tr>
+</thead>
+<tbody>
+<tr><td>150–200</td><td>1 unit</td><td>2 units</td><td>4 units</td></tr>
+<tr><td>201–250</td><td>2 units</td><td>4 units</td><td>7 units</td></tr>
+<tr><td>251–300</td><td>3 units</td><td>6 units</td><td>10 units</td></tr>
+<tr><td>301–350</td><td>4 units</td><td>8 units</td><td>13 units</td></tr>
+<tr><td>&gt; 350</td><td>5 units</td><td>10 units</td><td>16 units</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="warning">
+<strong>Warning:</strong> Sliding scale insulin alone leads to poor glycemic control — it treats hyperglycemia after it has already occurred rather than preventing it. It should always be combined with scheduled basal (and ideally bolus) insulin.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4CD;</span> Injection Sites and Rotation</h2>
+
+<h3>Recommended Injection Sites</h3>
+<ul>
+<li><strong>Abdomen:</strong> Fastest absorption. Preferred for rapid-acting (mealtime) insulin. Avoid a 2-inch radius around the navel.</li>
+<li><strong>Thighs:</strong> Outer upper thighs. Slower absorption than abdomen. Good for long-acting insulin.</li>
+<li><strong>Upper arms:</strong> Back/outer area. Moderate absorption. May need help reaching.</li>
+<li><strong>Buttocks:</strong> Upper outer quadrant. Slowest absorption. Alternative site.</li>
+</ul>
+
+<h3>Site Rotation</h3>
+<ul>
+<li>Rotate injection sites systematically within the same anatomical area to prevent <strong>lipohypertrophy</strong> (lumpy, thickened tissue from repeated injections in the same spot).</li>
+<li>Space injections at least 1–2 cm (one finger-width) apart within the same area.</li>
+<li>Use the same general area at the same time of day for consistent absorption (e.g., always use the abdomen for breakfast bolus).</li>
+<li>Inspect injection sites regularly for lumps, hardness, or skin changes.</li>
+</ul>
+
+<div class="warning">
+<strong>Lipohypertrophy:</strong> Injecting repeatedly into the same spot causes fatty lumps under the skin. Insulin absorbed from these areas is unpredictable — leading to unexplained glucose variability. If lipohypertrophy is present, avoid injecting into those areas and allow them to resolve over months. Always rotate sites.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4A1;</span> Injection Technique</h2>
+<ol>
+<li>If using a new pen, attach a new pen needle (4 mm, 5 mm, or 6 mm for most patients — shorter needles are recommended to avoid intramuscular injection).</li>
+<li>Prime the pen: dial 2 units and press the injection button with the needle pointing up until a drop appears at the tip. This ensures proper function and removes air.</li>
+<li>Dial the prescribed dose.</li>
+<li>Choose a clean injection site. No alcohol swab needed if the skin is clean.</li>
+<li>Insert the needle at 90 degrees (for 4–5 mm needles, no skin pinch needed in most adults). For longer needles or very lean patients, pinch a fold of skin.</li>
+<li>Press the injection button all the way down.</li>
+<li><strong>Count to 10</strong> (or until the dose counter returns to zero) before withdrawing the needle — this ensures the full dose is delivered.</li>
+<li>Withdraw the needle and dispose of it in a sharps container.</li>
+</ol>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4F1;</span> Insulin Delivery Devices</h2>
+
+<h3>Insulin Pens</h3>
+<ul>
+<li><strong>Prefilled disposable pens:</strong> Come preloaded with insulin (e.g., Lantus SoloStar, FlexPen). Discard when empty.</li>
+<li><strong>Reusable pens:</strong> Accept insulin cartridges. More economical long-term.</li>
+<li><strong>Smart pens:</strong> (e.g., InPen, NovoPen 6) — track doses, timing, and can calculate boluses. Data syncs to smartphone apps.</li>
+<li>Advantages: Convenient, portable, accurate dosing, less painful than syringes, discreet.</li>
+</ul>
+
+<h3>Insulin Syringes</h3>
+<ul>
+<li>Available in U-100 (standard) markings: 30-unit (0.3 mL), 50-unit (0.5 mL), and 100-unit (1 mL) sizes.</li>
+<li>Choose the smallest syringe that accommodates your dose for most accurate measurement.</li>
+<li>Still widely used where pens are unavailable or cost-prohibitive.</li>
+<li>Allows mixing of certain insulins (e.g., NPH + Regular in the same syringe — draw clear/regular first, then cloudy/NPH).</li>
+</ul>
+
+<h3>Insulin Pumps (CSII — Continuous Subcutaneous Insulin Infusion)</h3>
+<ul>
+<li>Small computerized device that delivers rapid-acting insulin continuously through a subcutaneous cannula.</li>
+<li><strong>Basal rate:</strong> Programmable hourly rates replace long-acting insulin.</li>
+<li><strong>Bolus:</strong> User-initiated doses for meals and corrections, with built-in calculators.</li>
+<li><strong>Hybrid closed-loop (HCL) systems:</strong> Pump + CGM that automatically adjusts basal rates based on glucose readings (e.g., Medtronic 780G, Tandem Control-IQ, Omnipod 5). These systems significantly increase time in range and reduce hypoglycemia.</li>
+</ul>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Feature</th><th>Pen/Syringe</th><th>Insulin Pump</th></tr>
+</thead>
+<tbody>
+<tr><td>Injections/insertions</td><td>4–6+ injections daily</td><td>Infusion set change every 2–3 days</td></tr>
+<tr><td>Basal delivery</td><td>1–2 long-acting injections</td><td>Programmable hourly rates; can be suspended</td></tr>
+<tr><td>Bolus flexibility</td><td>Standard injection</td><td>Extended/dual-wave boluses for high-fat meals</td></tr>
+<tr><td>Cost</td><td>Lower</td><td>Higher (device + supplies)</td></tr>
+<tr><td>Training required</td><td>Minimal</td><td>Extensive</td></tr>
+<tr><td>Best for</td><td>All insulin users</td><td>T1D; T2D with variable schedules; pregnancy; frequent hypoglycemia</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x2744;&#xFE0F;</span> Insulin Storage</h2>
+<ul>
+<li><strong>Unopened insulin:</strong> Store in the refrigerator at 2–8&deg;C (36–46&deg;F). Do not freeze — frozen insulin is permanently damaged and must be discarded.</li>
+<li><strong>In-use insulin (pen or vial):</strong> Can be kept at room temperature (below 25–30&deg;C / 77–86&deg;F) for up to <strong>28–56 days</strong> depending on the product (check the package insert). Room-temperature insulin is more comfortable to inject.</li>
+<li><strong>Avoid:</strong> Direct sunlight, extreme heat (car glove compartment, windowsill), and freezing.</li>
+<li><strong>When traveling:</strong> Carry insulin in a cool bag or insulated case. Never check insulin in airline luggage (cargo hold can freeze). Carry a prescription letter for security.</li>
+<li><strong>Inspect before use:</strong> Clear insulins (rapid, long-acting) should be clear and colorless. Discard if cloudy, discolored, or contains particles. NPH should be uniformly cloudy after gentle mixing — discard if clumped or grainy.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F6A8;</span> Managing Hypoglycemia on Insulin</h2>
+<p>Hypoglycemia (blood glucose &lt; 70 mg/dL) is the most common side effect of insulin therapy. It must be recognized and treated promptly.</p>
+
+<h3>Symptoms</h3>
+<ul>
+<li><strong>Mild:</strong> Shakiness, sweating, hunger, rapid heartbeat, anxiety, pallor.</li>
+<li><strong>Moderate:</strong> Confusion, difficulty concentrating, irritability, blurred vision, weakness.</li>
+<li><strong>Severe:</strong> Loss of consciousness, seizures, inability to self-treat — requires assistance from another person.</li>
+</ul>
+
+<h3>Treatment — Rule of 15</h3>
+<ol>
+<li>Consume 15 grams of fast-acting glucose: 3–4 glucose tablets, 4 oz (120 mL) juice or regular soda, 1 tablespoon of honey or sugar.</li>
+<li>Wait 15 minutes and recheck glucose.</li>
+<li>If still &lt; 70 mg/dL, repeat step 1.</li>
+<li>Once glucose normalizes, eat a snack or meal with protein and carbs to sustain levels.</li>
+</ol>
+
+<h3>Glucagon for Severe Hypoglycemia</h3>
+<ul>
+<li><strong>Glucagon injection kit:</strong> Requires reconstitution (mixing powder with diluent) and injection.</li>
+<li><strong>Nasal glucagon (Baqsimi):</strong> Needle-free, single-dose nasal spray — easier to administer by bystanders.</li>
+<li><strong>Ready-to-inject glucagon (Gvoke HypoPen):</strong> Pre-mixed, auto-injector — simple to use in emergencies.</li>
+<li>All insulin users and their close contacts/family should have glucagon available and know how to use it.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F9D8;</span> Managing Injection Anxiety</h2>
+<p>Fear of needles (trypanophobia) is common and can be a significant barrier to insulin initiation. Strategies to help:</p>
+<ul>
+<li><strong>Modern pen needles are tiny:</strong> 4 mm x 32G needles are shorter and thinner than most people imagine. The injection is usually less painful than a fingerstick.</li>
+<li><strong>Numb the site:</strong> Apply an ice cube for 10–15 seconds before injecting, or use a topical anesthetic cream.</li>
+<li><strong>Use a quick motion:</strong> Insert the needle confidently in one smooth motion — hesitation increases discomfort.</li>
+<li><strong>Practice with saline:</strong> Healthcare providers can demonstrate with a saline injection so patients can experience the sensation without pressure.</li>
+<li><strong>Injection aids:</strong> Spring-loaded devices (e.g., i-Port Advance) insert a small cannula that stays in place for 3 days — multiple injections go through the port without repeated skin punctures.</li>
+<li><strong>Psychological support:</strong> For severe needle phobia, cognitive behavioral therapy (CBT) or guided exposure therapy can be effective.</li>
+<li><strong>Consider alternatives:</strong> Insulin pumps (only one insertion every 2–3 days) or, for T2D patients not yet on insulin, injectable GLP-1 RAs with very fine needles.</li>
+</ul>
+
+<div class="tip">
+<strong>Perspective:</strong> Most patients who were initially afraid of injections report that the anticipation was far worse than the reality. After a few days of practice, injections become routine and nearly painless.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x267B;&#xFE0F;</span> Safe Disposal of Sharps</h2>
+<ul>
+<li><strong>Used pen needles, syringes, and lancets</strong> are "sharps" and must be disposed of safely — never in regular household trash or recycling.</li>
+<li>Place all sharps immediately after use in an <strong>FDA-cleared sharps container</strong> or a heavy-duty plastic container with a screw-on lid (e.g., a laundry detergent bottle). Label it "SHARPS — DO NOT RECYCLE."</li>
+<li>When the container is three-quarters full, seal it and dispose of it according to local regulations:
+<ul>
+<li>Community sharps drop-off sites (pharmacies, hospitals, waste facilities)</li>
+<li>Mail-back sharps disposal programs</li>
+<li>Household hazardous waste collection events</li>
+</ul>
+</li>
+<li><strong>Never:</strong> Clip, bend, or recap needles. Never flush sharps down the toilet. Never place loose sharps in recycling bins or trash bags.</li>
+<li>When traveling, carry a portable sharps container and bring used sharps home for proper disposal.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F6AB;</span> Common Insulin Myths</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Myth</th><th>Fact</th></tr>
+</thead>
+<tbody>
+<tr><td>"Insulin means I've failed"</td><td>Insulin is needed because of progressive beta-cell decline, not personal failure. It is the most effective glucose-lowering therapy available.</td></tr>
+<tr><td>"Insulin causes complications"</td><td>High blood glucose causes complications. Insulin helps prevent them by achieving better control.</td></tr>
+<tr><td>"Once you start insulin, you can never stop"</td><td>In T1D, insulin is lifelong. In T2D, insulin may be reduced or stopped if significant weight loss, lifestyle changes, or other medications achieve targets.</td></tr>
+<tr><td>"Insulin causes weight gain, so it must be bad"</td><td>Some weight gain may occur (better glucose utilization, reduced glycosuria), but the metabolic benefits of good control far outweigh this. Combining insulin with GLP-1 RA or SGLT2i can mitigate weight gain.</td></tr>
+<tr><td>"Insulin injections are very painful"</td><td>Modern pen needles (4–5 mm, 32G) cause minimal discomfort — most patients describe it as a small pinch or less.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="page-nav">
+<a class="prev" href="medications-oral.html">Oral Medications</a>
+<a class="next" href="latest-treatments.html">Latest Treatments</a>
+</div>
+</div>
+<div class="footer">This guide is for informational purposes. Always consult a qualified endocrinologist / diabetologist.</div>
+<button class="scroll-top" id="scrollTop" title="Back to top">&uarr;</button>
+<script>
+var sb=document.getElementById('scrollTop');window.addEventListener('scroll',function(){sb.classList.toggle('visible',window.scrollY>400)});sb.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+document.querySelectorAll('.accordion-header').forEach(function(h){h.addEventListener('click',function(){this.parentElement.classList.toggle('open')})});
+</script>
+</body></html>
