@@ -1,0 +1,502 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Insulin Pumps Guide — SugarWise</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#1a7a5a"><meta property="og:type" content="website"><meta property="og:site_name" content="SugarWise"><meta property="og:url" content="https://aravindcleaerr.github.io/diabetes-guide/insulin-pumps.html"><meta property="og:description" content="Free educational diabetes management guide. Not medical advice."><meta property="og:image" content="https://aravindcleaerr.github.io/diabetes-guide/og-image.svg"></head><body>
+<a href="#main" class="skip-link">Skip to content</a>
+<nav class="navbar"><div class="navbar-inner"><a class="brand" href="index.html">SugarWise</a><a class="home-link" href="index.html">All Topics</a></div></nav>
+<div class="container" id="main" role="main">
+<div class="page-header"><h1>Insulin Pumps</h1><p>Automated insulin delivery — how pumps work, who benefits, and modern hybrid closed-loop systems</p></div>
+<div class="last-reviewed">Content last reviewed: January 2026 | AI-assisted content</div>
+
+<div class="danger"><strong>CRITICAL SAFETY NOTICE:</strong> Never start, stop, or change any insulin therapy or pump settings without consulting your diabetes care team. The information below is for educational awareness only. Pump therapy requires proper training and medical supervision. Improper use can lead to serious complications including diabetic ketoacidosis (DKA).</div>
+
+<div class="illus">
+<svg width="340" height="180" viewBox="0 0 340 180" xmlns="http://www.w3.org/2000/svg">
+<!-- Insulin pump body -->
+<rect x="30" y="40" width="100" height="70" rx="8" fill="#1a7a5a"/>
+<rect x="35" y="45" width="90" height="40" rx="4" fill="#0d3d2d"/>
+<!-- Screen display -->
+<rect x="40" y="50" width="80" height="30" rx="2" fill="#1a3a2a"/>
+<text x="80" y="62" text-anchor="middle" font-size="7" fill="#4ade80">BASAL: 0.8 U/hr</text>
+<text x="80" y="73" text-anchor="middle" font-size="7" fill="#4ade80">IOB: 2.4 U</text>
+<!-- Pump buttons -->
+<circle cx="50" cy="100" r="6" fill="#145e45"/>
+<circle cx="70" cy="100" r="6" fill="#145e45"/>
+<circle cx="90" cy="100" r="6" fill="#145e45"/>
+<circle cx="110" cy="100" r="6" fill="#145e45"/>
+<!-- Tubing from pump -->
+<path d="M130 75 Q160 75 170 90 Q180 105 200 105 Q220 105 230 95" stroke="#64748b" stroke-width="3" fill="none" stroke-linecap="round"/>
+<!-- Infusion site (on skin representation) -->
+<ellipse cx="280" cy="95" rx="45" ry="35" fill="#f5d0c5" stroke="#d4a99a" stroke-width="1"/>
+<!-- Cannula/infusion set -->
+<circle cx="260" cy="95" r="12" fill="white" stroke="#1a7a5a" stroke-width="2"/>
+<circle cx="260" cy="95" r="5" fill="#1a7a5a"/>
+<!-- Tubing connection to infusion set -->
+<path d="M230 95 L248 95" stroke="#64748b" stroke-width="3" fill="none"/>
+<!-- Basal delivery indicator (animated) -->
+<circle cx="175" cy="90" r="4" fill="#4ade80">
+  <animate attributeName="cx" values="140;220;140" dur="3s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+</circle>
+<!-- Bolus delivery indicator (animated) -->
+<circle cx="155" cy="90" r="3" fill="#60a5fa">
+  <animate attributeName="cx" values="140;220;140" dur="1.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/>
+</circle>
+<!-- Labels -->
+<text x="80" y="130" text-anchor="middle" font-size="9" fill="#64748b">Insulin Pump</text>
+<text x="280" y="145" text-anchor="middle" font-size="9" fill="#64748b">Infusion Site</text>
+<!-- Legend -->
+<circle cx="50" cy="160" r="4" fill="#4ade80"/>
+<text x="60" y="163" font-size="8" fill="#64748b">Basal (continuous)</text>
+<circle cx="160" cy="160" r="4" fill="#60a5fa"/>
+<text x="170" y="163" font-size="8" fill="#64748b">Bolus (on-demand)</text>
+</svg>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F489;</span> What is an Insulin Pump?</h2>
+<p>An insulin pump is a small, computerized device that delivers insulin continuously throughout the day and night. This method is called <strong>Continuous Subcutaneous Insulin Infusion (CSII)</strong>. The pump replaces the need for multiple daily injections by providing a steady stream of rapid-acting insulin.</p>
+
+<h3>The Basal-Bolus Concept in Pumps</h3>
+<ul>
+<li><strong>Basal insulin:</strong> A continuous, programmable flow of small amounts of rapid-acting insulin delivered 24/7. This mimics the pancreas's background insulin secretion and keeps blood glucose stable between meals and overnight.</li>
+<li><strong>Bolus insulin:</strong> Additional doses delivered on-demand at mealtimes or to correct high blood glucose. The user programs the pump to deliver bolus doses based on carbohydrate intake and current glucose levels.</li>
+</ul>
+
+<div class="info-cards">
+<div class="info-card"><span class="ic-icon">&#x23F0;</span><div class="ic-title">24/7 Delivery</div><div class="ic-text">Continuous basal insulin every few minutes</div></div>
+<div class="info-card"><span class="ic-icon">&#x1F37D;&#xFE0F;</span><div class="ic-title">Mealtime Bolus</div><div class="ic-text">On-demand doses for food &amp; corrections</div></div>
+<div class="info-card"><span class="ic-icon">&#x1F4CA;</span><div class="ic-title">Precise Dosing</div><div class="ic-text">Increments as small as 0.025 units</div></div>
+<div class="info-card"><span class="ic-icon">&#x1F504;</span><div class="ic-title">Adjustable Rates</div><div class="ic-text">Different basal rates for different times</div></div>
+</div>
+
+<div class="note">
+<strong>Key Advantage:</strong> Unlike long-acting insulin injections that cannot be adjusted once given, pump basal rates can be increased, decreased, or temporarily suspended at any time — providing unmatched flexibility for exercise, illness, or changing schedules.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x2699;&#xFE0F;</span> How Pumps Work</h2>
+
+<h3>Main Components</h3>
+<ul>
+<li><strong>Pump device:</strong> Contains the motor, processor, user interface (screen and buttons), and battery. Houses the insulin reservoir.</li>
+<li><strong>Insulin reservoir/cartridge:</strong> A small container (typically 180-300 units capacity) filled with rapid-acting insulin that sits inside the pump.</li>
+<li><strong>Infusion set:</strong> A disposable component consisting of tubing and a cannula. Connects the pump to the body.</li>
+<li><strong>Cannula:</strong> A tiny, flexible plastic tube (or small needle in some sets) inserted under the skin, typically in the abdomen, that delivers insulin to subcutaneous tissue.</li>
+<li><strong>Tubing:</strong> Flexible plastic tubing (typically 23-43 inches) that connects the reservoir to the cannula.</li>
+</ul>
+
+<h3>Tubed vs. Tubeless (Patch) Pumps</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Feature</th><th>Tubed Pumps</th><th>Tubeless/Patch Pumps</th></tr>
+</thead>
+<tbody>
+<tr><td>Design</td><td>Separate pump worn on belt/pocket, connected via tubing</td><td>Pod worn directly on skin, no external tubing</td></tr>
+<tr><td>Examples</td><td>Medtronic 780G, Tandem t:slim X2</td><td>Omnipod 5, Omnipod DASH</td></tr>
+<tr><td>Discretion</td><td>Pump visible; tubing can be concealed under clothing</td><td>More discreet; pod hidden under clothing</td></tr>
+<tr><td>Site options</td><td>More flexibility in pump placement</td><td>Pod must be placed on body</td></tr>
+<tr><td>Water resistance</td><td>Pump typically removed for swimming; infusion set stays</td><td>Fully waterproof; can swim with pod on</td></tr>
+<tr><td>Infusion set changes</td><td>Every 2-3 days</td><td>Pod changed every 3 days</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="tip">
+<strong>Tip:</strong> For active individuals, athletes, or those who swim frequently, tubeless patch pumps may offer more convenience. For those who prefer a traditional device with a screen and more direct control, tubed pumps remain an excellent choice.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4F1;</span> Popular Pump Systems</h2>
+
+<h3>Medtronic Insulin Pumps</h3>
+<ul>
+<li><strong>MiniMed 780G:</strong> Advanced hybrid closed-loop system with SmartGuard technology. Auto-adjusts basal every 5 minutes based on CGM data. Includes auto-correction boluses.</li>
+<li><strong>MiniMed 770G:</strong> Previous generation HCL system, still widely used.</li>
+<li>Pairs with Guardian 4 CGM sensor.</li>
+<li>Bluetooth connectivity to smartphone app for monitoring.</li>
+</ul>
+
+<h3>Tandem Diabetes Care</h3>
+<ul>
+<li><strong>t:slim X2:</strong> Sleek, touchscreen insulin pump with Control-IQ technology (hybrid closed-loop).</li>
+<li>Pairs with Dexcom G6 or G7 CGM.</li>
+<li>Control-IQ predicts glucose 30 minutes ahead, adjusts basal, and delivers automatic correction boluses.</li>
+<li>Software-updatable — new features can be added without replacing hardware.</li>
+</ul>
+
+<h3>Insulet Omnipod</h3>
+<ul>
+<li><strong>Omnipod 5:</strong> Tubeless, waterproof patch pump with automated insulin delivery. Integrates with Dexcom G6 CGM.</li>
+<li><strong>Omnipod DASH:</strong> Tubeless system without automation (manual mode), controlled via smartphone-like PDM.</li>
+<li>No tubing — the pod adheres directly to skin and contains both reservoir and cannula.</li>
+<li>Pods are replaced every 3 days (or up to 72+ hours).</li>
+</ul>
+
+<h3>Quick Comparison</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>System</th><th>Type</th><th>CGM Pairing</th><th>Automation</th><th>Key Feature</th></tr>
+</thead>
+<tbody>
+<tr><td>Medtronic 780G</td><td>Tubed</td><td>Guardian 4</td><td>Hybrid closed-loop</td><td>Auto-correction boluses</td></tr>
+<tr><td>Tandem t:slim X2</td><td>Tubed</td><td>Dexcom G6/G7</td><td>Control-IQ HCL</td><td>Touchscreen, software-updatable</td></tr>
+<tr><td>Omnipod 5</td><td>Tubeless</td><td>Dexcom G6</td><td>Hybrid closed-loop</td><td>No tubing, waterproof</td></tr>
+<tr><td>Omnipod DASH</td><td>Tubeless</td><td>None (manual)</td><td>None</td><td>Tubeless simplicity</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F504;</span> Hybrid Closed-Loop Systems</h2>
+<p>Hybrid closed-loop (HCL) systems, sometimes called "artificial pancreas" systems, combine an insulin pump with a continuous glucose monitor (CGM) and a sophisticated algorithm to automate insulin delivery.</p>
+
+<h3>How They Work</h3>
+<ol>
+<li>The CGM continuously measures interstitial glucose (typically every 5 minutes).</li>
+<li>Data is transmitted wirelessly to the pump's algorithm.</li>
+<li>The algorithm predicts where glucose is heading and automatically adjusts basal insulin delivery.</li>
+<li>If glucose is rising, basal rate increases. If glucose is falling, basal rate decreases or suspends.</li>
+<li>Some systems also deliver automatic correction boluses for persistent highs.</li>
+</ol>
+
+<h3>Key Features</h3>
+<ul>
+<li><strong>Suspend-before-low:</strong> The pump predicts hypoglycemia and suspends insulin delivery before glucose drops too low, then resumes when glucose recovers.</li>
+<li><strong>Auto-basal adjustment:</strong> Continuous, real-time adjustment of basal rates every 5 minutes based on CGM trends.</li>
+<li><strong>Auto-correction boluses:</strong> Some systems (780G, Control-IQ, Omnipod 5) automatically deliver small correction doses for elevated glucose.</li>
+<li><strong>Target glucose setting:</strong> Users set a target glucose (e.g., 100-120 mg/dL), and the system works to maintain it.</li>
+</ul>
+
+<div class="note">
+<strong>Why "Hybrid"?</strong> These systems are called "hybrid" because they still require user input for mealtime boluses. The user must count carbohydrates and initiate a meal bolus — the automation handles basal and corrections, but not meal coverage. Fully closed-loop systems (no meal announcement) are still in development.
+</div>
+
+<h3>Benefits of HCL Systems</h3>
+<ul>
+<li>Significantly increased <strong>time in range</strong> (70-180 mg/dL) — often 70-80%+ with good use.</li>
+<li>Reduced hypoglycemia, especially overnight.</li>
+<li>Less glycemic variability.</li>
+<li>Improved HbA1c without increased hypoglycemia risk.</li>
+<li>Reduced diabetes management burden and improved quality of life.</li>
+<li>Better sleep — the system works overnight while you rest.</li>
+</ul>
+
+<div class="warning">
+<strong>Important:</strong> HCL systems are powerful tools but are not fully automatic. Users must still: calibrate CGM if required, respond to alerts, enter carbs for meals, change infusion sets/sensors, and carry backup supplies. The system cannot prevent DKA if the pump fails or infusion site is compromised.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F1EE;&#x1F1F3;</span> Pump Availability in India</h2>
+
+<h3>Where to Get Insulin Pumps</h3>
+<ul>
+<li><strong>Major diabetes centers:</strong> AIIMS, CMC Vellore, Fortis, Apollo, Max hospitals, and specialized diabetes clinics in metro cities.</li>
+<li><strong>Authorized distributors:</strong> Medtronic India, official Tandem/Omnipod distributors.</li>
+<li><strong>Pediatric endocrinology centers:</strong> Many children with Type 1 diabetes initiate pump therapy at specialized pediatric centers.</li>
+<li><strong>Online platforms:</strong> Some authorized medical equipment suppliers offer pumps with proper documentation.</li>
+</ul>
+
+<h3>Approximate Costs (2025-2026)</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Item</th><th>Approximate Cost (INR)</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>Insulin pump device</td><td>&#x20B9;2,50,000 - &#x20B9;4,50,000</td><td>One-time cost; varies by model</td></tr>
+<tr><td>Infusion sets (box of 10)</td><td>&#x20B9;5,000 - &#x20B9;8,000</td><td>Changed every 2-3 days</td></tr>
+<tr><td>Reservoirs (box of 10)</td><td>&#x20B9;2,000 - &#x20B9;4,000</td><td>Changed with infusion set</td></tr>
+<tr><td>Omnipod pods (box of 5)</td><td>&#x20B9;8,000 - &#x20B9;12,000</td><td>Changed every 3 days</td></tr>
+<tr><td>CGM sensors (if integrated)</td><td>&#x20B9;3,000 - &#x20B9;6,000 each</td><td>Changed every 7-14 days</td></tr>
+<tr><td>Monthly consumables</td><td>&#x20B9;15,000 - &#x20B9;25,000</td><td>Ongoing cost for supplies</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Warranty and Support</h3>
+<ul>
+<li>Most pumps come with a <strong>4-year warranty</strong> covering manufacturing defects.</li>
+<li>24/7 helpline support is available from major manufacturers.</li>
+<li>Loaner pumps may be provided during warranty repairs.</li>
+<li>Extended warranty options may be available for purchase.</li>
+</ul>
+
+<div class="tip">
+<strong>Insurance:</strong> Some corporate health insurance plans and government schemes (CGHS, ECHS) may provide partial coverage for insulin pumps and supplies. Check with your insurer and diabetes care team about coverage options and documentation requirements.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x2705;</span> Who is a Good Candidate?</h2>
+
+<h3>Ideal Candidates for Pump Therapy</h3>
+<ul>
+<li><strong>Type 1 diabetes:</strong> Pumps are most commonly used by people with T1D who require intensive insulin therapy.</li>
+<li><strong>Type 2 diabetes:</strong> Selected patients on intensive insulin therapy who have difficulty achieving targets with MDI.</li>
+<li><strong>Frequent hypoglycemia:</strong> Especially nocturnal hypoglycemia or hypoglycemia unawareness.</li>
+<li><strong>High glycemic variability:</strong> Unpredictable glucose swings despite optimized MDI.</li>
+<li><strong>Dawn phenomenon:</strong> Significant early-morning glucose rise that's hard to control with long-acting insulin.</li>
+<li><strong>Variable schedules:</strong> Shift workers, frequent travelers, athletes with changing activity levels.</li>
+<li><strong>Pregnancy planning or pregnant:</strong> Pumps offer the tight control needed during pregnancy.</li>
+<li><strong>Children and adolescents:</strong> Flexibility for school schedules, sports, and growth-related insulin changes.</li>
+</ul>
+
+<h3>Lifestyle Considerations</h3>
+<ul>
+<li><strong>Motivation and willingness to learn:</strong> Pump therapy requires significant education and active engagement.</li>
+<li><strong>Ability to count carbohydrates:</strong> Accurate carb counting is essential for bolus dosing.</li>
+<li><strong>Regular blood glucose monitoring:</strong> Even with CGM, occasional fingerstick confirmation may be needed.</li>
+<li><strong>Commitment to infusion site care:</strong> Regular site changes and rotation are crucial.</li>
+<li><strong>Access to healthcare support:</strong> Regular follow-up with a diabetes care team experienced in pump management.</li>
+<li><strong>Financial capacity:</strong> Ongoing costs for supplies must be sustainable.</li>
+</ul>
+
+<div class="warning">
+<strong>Not Recommended If:</strong> A person is unable or unwilling to check blood glucose regularly, cannot commit to proper training and follow-up, has severe psychiatric conditions that impair self-care, or has limited access to supplies and medical support. Pump therapy requires responsibility — it is not a "set and forget" solution.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4CA;</span> Pump vs Multiple Daily Injections (MDI)</h2>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Factor</th><th>Insulin Pump (CSII)</th><th>Multiple Daily Injections (MDI)</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Insulin delivery</strong></td><td>Continuous basal + on-demand bolus</td><td>1-2 basal injections + 3-4 bolus injections daily</td></tr>
+<tr><td><strong>Flexibility</strong></td><td>High — basal rates adjustable hourly; can suspend</td><td>Limited — once injected, cannot be adjusted</td></tr>
+<tr><td><strong>Precision</strong></td><td>Increments as small as 0.025-0.05 units</td><td>Typically 0.5-1 unit increments (pens)</td></tr>
+<tr><td><strong>Injections/insertions</strong></td><td>1 insertion every 2-3 days</td><td>4-6+ injections daily</td></tr>
+<tr><td><strong>Dawn phenomenon control</strong></td><td>Excellent — programmable early-morning basal increase</td><td>Challenging with fixed basal insulin</td></tr>
+<tr><td><strong>Exercise management</strong></td><td>Temp basal rates; can suspend or reduce</td><td>Must plan ahead; snacks often needed</td></tr>
+<tr><td><strong>Device worn</strong></td><td>Yes — pump/pod attached 24/7</td><td>No device; injections as needed</td></tr>
+<tr><td><strong>Cost</strong></td><td>Higher (device + ongoing supplies)</td><td>Lower (insulin + needles/pens)</td></tr>
+<tr><td><strong>Training required</strong></td><td>Extensive (typically 2-4 sessions)</td><td>Moderate</td></tr>
+<tr><td><strong>Risk if device fails</strong></td><td>DKA risk within hours if not addressed</td><td>No device dependency</td></tr>
+<tr><td><strong>HCL/automation available</strong></td><td>Yes (with CGM integration)</td><td>No (though smart pens + CGM help)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="note">
+<strong>Key Point:</strong> Both pump therapy and well-managed MDI can achieve excellent glycemic control. The best choice depends on individual lifestyle, preferences, resources, and access to support. Many people with diabetes do extremely well on MDI with CGM — a pump is a tool, not a requirement for good outcomes.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F39B;&#xFE0F;</span> Basal Rates &amp; Bolus Calculations</h2>
+
+<h3>Setting Basal Rates</h3>
+<p>Basal rates are programmed in units per hour and can vary throughout the day to match the body's natural insulin needs:</p>
+<ul>
+<li><strong>Total basal:</strong> Typically 40-50% of total daily insulin dose.</li>
+<li><strong>Common patterns:</strong>
+<ul>
+<li>Lower rates overnight (midnight to 3 AM)</li>
+<li>Higher rates in early morning (3-8 AM) to counter dawn phenomenon</li>
+<li>Moderate rates during the day</li>
+</ul>
+</li>
+<li><strong>Basal rate testing:</strong> Done by skipping meals and monitoring glucose to ensure basal alone keeps levels stable.</li>
+<li><strong>Typical rates:</strong> 0.4-1.5 units/hour for adults (highly individual).</li>
+</ul>
+
+<h3>Bolus Types</h3>
+<ul>
+<li><strong>Standard/Normal bolus:</strong> Full dose delivered immediately — for most meals.</li>
+<li><strong>Extended/Square bolus:</strong> Dose delivered gradually over a set time (e.g., 2-4 hours) — for slow-digesting meals.</li>
+<li><strong>Dual-wave/Combo bolus:</strong> Part delivered immediately, part extended — ideal for high-fat, high-protein meals (pizza, pasta with cream sauce).</li>
+</ul>
+
+<h3>Key Settings (Programmed with Your Diabetes Team)</h3>
+<ul>
+<li><strong>Insulin-to-Carb Ratio (ICR):</strong> How many grams of carbs are covered by 1 unit of insulin. Example: 1:10 means 1 unit for every 10g carbs.</li>
+<li><strong>Insulin Sensitivity Factor (ISF)/Correction Factor:</strong> How much 1 unit of insulin lowers blood glucose. Example: 1:40 means 1 unit lowers glucose by 40 mg/dL.</li>
+<li><strong>Target glucose:</strong> The blood glucose level the pump aims to achieve (e.g., 100-120 mg/dL).</li>
+<li><strong>Active insulin time (duration of insulin action):</strong> How long bolus insulin remains active (typically 3-5 hours). Used to calculate "insulin on board" (IOB) and prevent stacking.</li>
+</ul>
+
+<div class="tip">
+<strong>Insulin Stacking:</strong> Taking correction doses too close together can cause hypoglycemia because previous insulin is still active. Pumps track IOB and warn against stacking — always check IOB before correcting a high.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1FA79;</span> Infusion Site Care</h2>
+
+<h3>Recommended Infusion Sites</h3>
+<ul>
+<li><strong>Abdomen:</strong> Most common site. Good absorption. Avoid 2-inch radius around navel.</li>
+<li><strong>Upper buttocks:</strong> Good alternative, especially for children or lean adults.</li>
+<li><strong>Upper outer thighs:</strong> Usable site; absorption may be slightly slower.</li>
+<li><strong>Back of upper arms:</strong> Can be used but may be harder to reach for self-insertion.</li>
+<li><strong>Lower back/hip area:</strong> Alternative site for some users.</li>
+</ul>
+
+<h3>Site Rotation</h3>
+<ul>
+<li>Change infusion site every <strong>2-3 days</strong> (or per manufacturer guidelines).</li>
+<li>Rotate sites systematically — never use the same spot repeatedly.</li>
+<li>Move at least 2-3 cm (about 1 inch) away from the previous site.</li>
+<li>Avoid areas with scars, moles, stretch marks, or lipohypertrophy.</li>
+<li>Keep a rotation log or mental map to ensure even distribution.</li>
+</ul>
+
+<h3>Avoiding Lipohypertrophy</h3>
+<ul>
+<li><strong>Lipohypertrophy</strong> = fatty lumps caused by repeated insulin injection/infusion in the same area.</li>
+<li>Insulin absorption from lipohypertrophic tissue is unpredictable — leads to glucose variability.</li>
+<li>Prevention: strict site rotation; never reuse the same spot within 2-3 weeks.</li>
+<li>If present: avoid the affected area completely until it resolves (may take months).</li>
+</ul>
+
+<h3>Site Change Best Practices</h3>
+<ol>
+<li>Wash hands thoroughly before site change.</li>
+<li>Clean the new site with alcohol or soap and water; let dry completely.</li>
+<li>Insert the new infusion set, then fill the cannula (prime).</li>
+<li>Remove the old site after confirming the new one is working.</li>
+<li>Check glucose 1-2 hours after site change to ensure proper insulin delivery.</li>
+<li>Dispose of used sets in a sharps container.</li>
+</ol>
+
+<div class="warning">
+<strong>Signs of Site Problems:</strong> Unexplained high blood glucose, redness/swelling/pain at site, blood in tubing, bent or kinked cannula, or adhesive lifting. If glucose is high and doesn't respond to correction, change the site immediately and consider an injection with a pen/syringe.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x26A0;&#xFE0F;</span> Pump Emergencies</h2>
+
+<h3>DKA Risk with Pump Therapy</h3>
+<p>Because pumps use only rapid-acting insulin with no long-acting depot, interruption of insulin delivery can lead to diabetic ketoacidosis (DKA) within <strong>4-6 hours</strong>. This is the most serious risk of pump therapy.</p>
+
+<h4>Causes of Insulin Interruption</h4>
+<ul>
+<li>Infusion set occlusion (blocked cannula or tubing)</li>
+<li>Kinked or bent cannula</li>
+<li>Air bubbles in tubing</li>
+<li>Empty reservoir</li>
+<li>Pump malfunction or dead battery</li>
+<li>Disconnected tubing</li>
+<li>Infusion site infection or failure</li>
+</ul>
+
+<h3>Warning Signs</h3>
+<ul>
+<li>Unexplained high blood glucose (&gt;250 mg/dL) that doesn't respond to correction</li>
+<li>Nausea, vomiting, abdominal pain</li>
+<li>Fruity breath odor</li>
+<li>Rapid breathing</li>
+<li>Confusion or drowsiness</li>
+<li>Ketones in urine or blood (check if glucose &gt;250 mg/dL)</li>
+</ul>
+
+<h3>Emergency Protocol</h3>
+<ol>
+<li><strong>Check for ketones</strong> if blood glucose &gt;250 mg/dL and not responding to pump bolus.</li>
+<li><strong>Give correction dose by injection</strong> (syringe or pen) — do not rely on the pump if malfunction is suspected.</li>
+<li><strong>Change the entire infusion set</strong> — new site, new tubing, new reservoir.</li>
+<li><strong>Check pump for errors</strong>, alarms, or low battery.</li>
+<li><strong>Stay hydrated</strong> — drink water.</li>
+<li><strong>Seek emergency care</strong> if ketones are moderate/large, vomiting persists, or symptoms worsen.</li>
+</ol>
+
+<h3>Troubleshooting Occlusions</h3>
+<ul>
+<li>If "occlusion" or "no delivery" alarm: do not repeatedly bolus through the same set.</li>
+<li>Disconnect tubing from body and attempt a small bolus — watch for insulin drops at the end.</li>
+<li>If no insulin appears, the problem is in the tubing or reservoir — replace.</li>
+<li>If insulin flows freely but glucose is still high, the cannula may be kinked or dislodged — change site.</li>
+</ul>
+
+<div class="danger">
+<strong>CRITICAL:</strong> All pump users MUST carry backup injection supplies (rapid-acting insulin pen or vial + syringes) at ALL times. Never travel or be away from home without the ability to inject insulin manually. Pump failures can happen without warning.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F3CA;</span> Living with a Pump</h2>
+
+<h3>Swimming and Water Activities</h3>
+<ul>
+<li><strong>Tubeless pumps (Omnipod):</strong> Waterproof — can be worn while swimming (depth and time limits apply per manufacturer).</li>
+<li><strong>Tubed pumps:</strong> Most are not waterproof. Disconnect at the infusion site for swimming; the site stays in place.</li>
+<li>Reconnect and bolus after swimming if disconnected for &gt;1 hour.</li>
+<li>Check glucose before and after swimming.</li>
+<li>Ensure adhesive is secure — consider skin prep products or overlay patches.</li>
+</ul>
+
+<h3>Sleeping</h3>
+<ul>
+<li>Wear the pump clipped to pajamas, placed in a waist pouch, or beside you in bed (tubing long enough to allow movement).</li>
+<li>Tubeless pods are worn continuously — no change in sleep routine.</li>
+<li>HCL systems work overnight to maintain glucose — many users experience significantly better overnight control.</li>
+<li>Set overnight basal rates appropriately with your diabetes team.</li>
+</ul>
+
+<h3>Intimacy</h3>
+<ul>
+<li>Pumps can be disconnected briefly (up to 1-2 hours) for intimacy.</li>
+<li>Disconnect at the infusion site — the site remains in place.</li>
+<li>Tubeless pods can remain in place (choose discreet placement sites).</li>
+<li>Reconnect afterward; bolus if disconnected &gt;1 hour or eating.</li>
+<li>This is a normal part of life — work out what's comfortable for you and your partner.</li>
+</ul>
+
+<h3>Travel Considerations</h3>
+<ul>
+<li><strong>Airport security:</strong> Insulin pumps can go through metal detectors. Avoid full-body scanners and request hand-inspection if concerned (X-ray may affect some pumps). Carry a letter from your doctor.</li>
+<li><strong>Time zone changes:</strong> Adjust pump clock gradually; consult your diabetes team for crossing multiple time zones.</li>
+<li><strong>Supplies:</strong> Pack twice the supplies you expect to need. Carry in hand luggage, not checked bags.</li>
+<li><strong>Backup insulin:</strong> Always carry a rapid-acting pen and syringes as backup.</li>
+<li><strong>Altitude:</strong> Air bubbles may expand at high altitude (flights, mountains) — check for and purge bubbles.</li>
+<li><strong>Temperature:</strong> Protect insulin from extreme heat/cold. Insulin in the pump is at body temperature; spare supplies need protection.</li>
+</ul>
+
+<h3>Exercise and Sports</h3>
+<ul>
+<li>Use temporary basal rates — reduce basal 30-50% starting 1-2 hours before exercise.</li>
+<li>Consider disconnecting for contact sports to avoid pump damage.</li>
+<li>Some users remove pumps for short intense activities (&lt;1 hour).</li>
+<li>Check glucose before, during (if prolonged), and after exercise.</li>
+<li>Have fast-acting glucose readily available.</li>
+</ul>
+
+<div class="tip">
+<strong>Pump Accessories:</strong> Many companies make specialized pump cases, belts, armbands, and clothing with pump pockets. Explore options to find what works best for your lifestyle and activities.
+</div>
+</div>
+
+<div class="section see-also"><h3>Related Topics</h3><ul>
+<li><a href="insulin-guide.html">Insulin Guide</a></li>
+<li><a href="blood-sugar-monitoring.html">Blood Sugar Monitoring</a></li>
+<li><a href="type1-diabetes.html">Type 1 Diabetes</a></li>
+<li><a href="hypoglycemia.html">Hypoglycemia</a></li>
+<li><a href="hyperglycemia.html">Hyperglycemia</a></li>
+</ul></div>
+<div class="page-nav">
+<a class="prev" href="cgm-guide.html">CGM Guide</a>
+<a class="next" href="insulin-guide.html">Insulin Guide</a>
+</div>
+</div>
+<div class="disclaimer">This content is for educational purposes only and does not replace professional medical advice. The creators of SugarWise are not medical professionals. Do not start, stop, or change any medication without consulting your doctor. In case of emergency, call 112 (India) or your local emergency number. <a href="terms-of-use.html">Read full Terms of Use &amp; Medical Disclaimer</a></div>
+<div class="privacy-notice">SugarWise does not use cookies, collect personal data, or track users.</div>
+<div class="footer"><span class="ai-badge">AI-Assisted Content</span><br>SugarWise &bull; Comprehensive Diabetes Management Companion &bull; <a href="terms-of-use.html">Terms of Use</a> &bull; Last updated: January 2026</div>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">&#9790;</button>
+<button class="scroll-top" aria-label="Scroll to top" id="scrollTop" title="Back to top">&uarr;</button>
+<script>
+var sb=document.getElementById('scrollTop');window.addEventListener('scroll',function(){sb.classList.toggle('visible',window.scrollY>400)});sb.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+document.querySelectorAll('.accordion-header').forEach(function(h){h.addEventListener('click',function(){this.parentElement.classList.toggle('open')})});
+</script>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}
+(function(){var t=document.getElementById('themeToggle');var saved=localStorage.getItem('theme');if(saved){document.documentElement.setAttribute('data-theme',saved);t.textContent=saved==='dark'?'\u2600':'\u263E';}t.addEventListener('click',function(){var d=document.documentElement.getAttribute('data-theme')==='dark'?'':'dark';document.documentElement.setAttribute('data-theme',d);localStorage.setItem('theme',d);t.textContent=d==='dark'?'\u2600':'\u263E';});})();
+</script></body></html>

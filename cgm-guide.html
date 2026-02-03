@@ -1,0 +1,467 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CGM (Continuous Glucose Monitor) Guide — SugarWise</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#1a7a5a"><meta property="og:type" content="website"><meta property="og:site_name" content="SugarWise"><meta property="og:url" content="https://aravindcleaerr.github.io/diabetes-guide/cgm-guide.html"><meta property="og:description" content="Free educational diabetes management guide. Not medical advice."><meta property="og:image" content="https://aravindcleaerr.github.io/diabetes-guide/og-image.svg"></head><body>
+<a href="#main" class="skip-link">Skip to content</a>
+<nav class="navbar"><div class="navbar-inner"><a class="brand" href="index.html">SugarWise</a><a class="home-link" href="index.html">All Topics</a></div></nav>
+<div class="container" id="main" role="main">
+<div class="page-header"><h1>Continuous Glucose Monitors (CGM)</h1><p>Real-time glucose tracking — how CGMs work, popular devices, and getting the most from your data</p></div>
+<div class="last-reviewed">Content last reviewed: January 2026 | AI-assisted content</div>
+
+<div class="illus">
+<svg width="320" height="160" viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg">
+<!-- Arm silhouette -->
+<ellipse cx="90" cy="90" rx="55" ry="70" fill="#e8d5c4" stroke="#c9a589" stroke-width="1.5"/>
+<!-- CGM sensor on arm -->
+<rect x="65" y="55" width="35" height="35" rx="6" fill="#f5f7fa" stroke="#1a7a5a" stroke-width="2"/>
+<circle cx="82" cy="72" r="8" fill="#1a7a5a"/>
+<circle cx="82" cy="72" r="4" fill="#ffffff" opacity="0.6"/>
+<!-- Sensor blinking light -->
+<circle cx="82" cy="72" r="2" fill="#4ade80">
+  <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+</circle>
+<!-- Wireless signal waves -->
+<path d="M100 60 Q110 55 115 60" stroke="#1a7a5a" stroke-width="1.5" fill="none" opacity="0.6">
+  <animate attributeName="opacity" values="0;0.6;0" dur="2s" repeatCount="indefinite"/>
+</path>
+<path d="M105 55 Q118 47 125 55" stroke="#1a7a5a" stroke-width="1.5" fill="none" opacity="0.4">
+  <animate attributeName="opacity" values="0;0.4;0" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+</path>
+<path d="M110 50 Q126 40 135 50" stroke="#1a7a5a" stroke-width="1.5" fill="none" opacity="0.2">
+  <animate attributeName="opacity" values="0;0.2;0" dur="2s" repeatCount="indefinite" begin="0.6s"/>
+</path>
+<!-- Data flow dots -->
+<circle cx="140" cy="55" r="3" fill="#1a7a5a">
+  <animate attributeName="cx" values="120;170" dur="1.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="150" cy="60" r="3" fill="#1a7a5a">
+  <animate attributeName="cx" values="120;170" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+  <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+</circle>
+<circle cx="160" cy="50" r="3" fill="#1a7a5a">
+  <animate attributeName="cx" values="120;170" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+  <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+</circle>
+<!-- Smartphone -->
+<rect x="180" y="25" width="55" height="100" rx="8" fill="#2d3748" stroke="#1a202c" stroke-width="2"/>
+<rect x="185" y="35" width="45" height="75" rx="2" fill="#e6f5ef"/>
+<!-- Phone screen content - glucose reading -->
+<text x="207" y="58" text-anchor="middle" font-size="18" fill="#1a7a5a" font-weight="800">
+  118<animate attributeName="fill" values="#1a7a5a;#1a7a5a;#e8913a;#1a7a5a" dur="8s" repeatCount="indefinite"/>
+</text>
+<text x="207" y="68" text-anchor="middle" font-size="6" fill="#64748b">mg/dL</text>
+<!-- Trend arrow on phone -->
+<path d="M200 78 L207 72 L214 78" stroke="#1a7a5a" stroke-width="2" fill="none">
+  <animate attributeName="d" values="M200 78 L207 72 L214 78;M200 75 L207 75 L214 75;M200 72 L207 78 L214 72;M200 75 L207 75 L214 75;M200 78 L207 72 L214 78" dur="8s" repeatCount="indefinite"/>
+</path>
+<!-- Mini glucose graph on phone -->
+<polyline points="188,95 193,92 198,97 203,90 208,93 213,88 218,91 223,85 228,89" stroke="#1a7a5a" stroke-width="1.5" fill="none">
+  <animate attributeName="points" values="188,95 193,92 198,97 203,90 208,93 213,88 218,91 223,85 228,89;188,93 193,95 198,90 203,93 208,88 213,92 218,87 223,90 228,86;188,95 193,92 198,97 203,90 208,93 213,88 218,91 223,85 228,89" dur="4s" repeatCount="indefinite"/>
+</polyline>
+<!-- Time in Range bar -->
+<rect x="188" y="100" width="40" height="6" rx="2" fill="#e2e8f0"/>
+<rect x="188" y="100" width="28" height="6" rx="2" fill="#4ade80"/>
+<!-- Phone home button -->
+<circle cx="207" cy="118" r="4" fill="#4a5568"/>
+<!-- Labels -->
+<text x="82" y="145" text-anchor="middle" font-size="9" fill="#64748b">CGM Sensor</text>
+<text x="207" y="145" text-anchor="middle" font-size="9" fill="#64748b">Real-time Data</text>
+<!-- Connection line -->
+<line x1="135" y1="72" x2="180" y2="60" stroke="#1a7a5a" stroke-width="1" stroke-dasharray="4,2" opacity="0.4"/>
+</svg>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4E1;</span> What is a CGM?</h2>
+<p>A <strong>Continuous Glucose Monitor (CGM)</strong> is a device that tracks glucose levels throughout the day and night, providing near-continuous data without the need for frequent fingersticks. Unlike traditional blood glucose meters that give you a single snapshot, CGMs reveal the complete picture of your glucose patterns.</p>
+
+<h3>CGM vs. Fingerstick — Key Differences</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Feature</th><th>Fingerstick (SMBG)</th><th>CGM</th></tr>
+</thead>
+<tbody>
+<tr><td>What it measures</td><td>Capillary blood glucose</td><td>Interstitial fluid glucose</td></tr>
+<tr><td>Readings per day</td><td>4–10 (manual)</td><td>288+ (automatic, every 5 min)</td></tr>
+<tr><td>Pain/discomfort</td><td>Finger prick each time</td><td>One sensor insertion every 7–14 days</td></tr>
+<tr><td>Trend information</td><td>None — point-in-time only</td><td>Arrows show direction and rate of change</td></tr>
+<tr><td>Overnight data</td><td>Rarely captured (would require waking up)</td><td>Continuous monitoring while you sleep</td></tr>
+<tr><td>Alerts</td><td>None</td><td>Customizable high/low alarms</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="note">
+<strong>Interstitial vs. Blood Glucose:</strong> CGMs measure glucose in the interstitial fluid (the fluid between cells), not directly in the blood. This is physiologically different from capillary blood glucose measured by fingerstick meters. Most of the time, the values are very close, but they can diverge during rapidly changing glucose levels.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x2699;&#xFE0F;</span> How CGMs Work</h2>
+<p>A CGM system consists of three main components working together to deliver continuous glucose data:</p>
+
+<h3>1. The Sensor</h3>
+<ul>
+<li>A tiny, flexible filament (about the width of a hair) inserted just under the skin.</li>
+<li>Contains an enzyme (glucose oxidase) that reacts with glucose in the interstitial fluid.</li>
+<li>Generates an electrical signal proportional to the glucose concentration.</li>
+<li>Lasts 7–14 days (depending on the system) before replacement is needed.</li>
+<li>Insertion is quick (usually painless) using an automatic applicator.</li>
+</ul>
+
+<h3>2. The Transmitter</h3>
+<ul>
+<li>A small device that attaches to the sensor (some systems have integrated transmitter + sensor).</li>
+<li>Converts the electrical signal from the sensor into glucose readings.</li>
+<li>Wirelessly sends data to the receiver/smartphone via Bluetooth.</li>
+<li>Powered by a battery — reusable transmitters last 3–12 months; some are disposable with the sensor.</li>
+</ul>
+
+<h3>3. The Receiver/Display</h3>
+<ul>
+<li>Can be a dedicated handheld receiver device, a smartphone app, or a smartwatch.</li>
+<li>Displays current glucose, trend arrows, and historical graphs.</li>
+<li>Triggers audio/vibration alerts for highs, lows, and rapid changes.</li>
+<li>Stores data for review and sharing with healthcare providers.</li>
+</ul>
+
+<h3>Factory Calibration vs. User Calibration</h3>
+<p>Modern CGMs come in two calibration types:</p>
+<ul>
+<li><strong>Factory-calibrated (no fingerstick required):</strong> FreeStyle Libre, Dexcom G6/G7, Medtronic Guardian 4. These are calibrated during manufacturing and require no user calibration.</li>
+<li><strong>User-calibrated:</strong> Older systems (Dexcom G5, Medtronic Guardian 3) and Eversense E3 require 1–2 fingerstick calibrations per day to maintain accuracy.</li>
+</ul>
+
+<div class="tip">
+<strong>How accurate are CGMs?</strong> Accuracy is measured by Mean Absolute Relative Difference (MARD). Modern factory-calibrated CGMs have MARD values of 8–10%, meaning readings are typically within 8–10% of a lab-quality blood glucose measurement. This is accurate enough for treatment decisions in most situations.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4F1;</span> Popular CGM Systems</h2>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>System</th><th>Sensor Duration</th><th>Calibration</th><th>Key Features</th><th>Best For</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>FreeStyle Libre 2</strong></td><td>14 days</td><td>Factory-calibrated</td><td>Affordable; optional real-time alarms; scan or continuous mode; widely available</td><td>Cost-conscious users; T2D; CGM beginners</td></tr>
+<tr><td><strong>FreeStyle Libre 3</strong></td><td>14 days</td><td>Factory-calibrated</td><td>Smallest sensor (size of 2 stacked coins); real-time continuous readings; Bluetooth to phone</td><td>Those wanting discretion; continuous data</td></tr>
+<tr><td><strong>Dexcom G7</strong></td><td>10 days</td><td>Factory-calibrated</td><td>30-min warmup; excellent accuracy; integrates with insulin pumps (Control-IQ, Omnipod 5); predictive alerts</td><td>T1D; pump users; Apple Watch integration</td></tr>
+<tr><td><strong>Medtronic Guardian 4</strong></td><td>7 days</td><td>Factory-calibrated</td><td>Pairs with Medtronic 780G pump for SmartGuard automated insulin delivery</td><td>Medtronic pump users; closed-loop systems</td></tr>
+<tr><td><strong>Eversense E3</strong></td><td>6 months (implanted)</td><td>1x/day fingerstick</td><td>Implanted sensor; on-body vibration alerts; longest duration; removable transmitter</td><td>Those wanting fewer insertions; active lifestyles</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Quick Comparison Summary</h3>
+<ul>
+<li><strong>Most affordable:</strong> FreeStyle Libre 2</li>
+<li><strong>Best accuracy:</strong> Dexcom G7</li>
+<li><strong>Smallest/most discreet:</strong> FreeStyle Libre 3</li>
+<li><strong>Longest sensor life:</strong> Eversense E3 (6 months)</li>
+<li><strong>Best for pump integration:</strong> Dexcom G7 (Tandem, Omnipod) or Guardian 4 (Medtronic)</li>
+</ul>
+
+<div class="note">
+<strong>Choosing a CGM:</strong> The "best" CGM depends on your individual needs — budget, insulin regimen, pump compatibility, lifestyle, and personal preferences. Discuss options with your diabetes care team to find the right fit.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F1EE;&#x1F1F3;</span> CGM Availability in India</h2>
+
+<h3>Where to Buy</h3>
+<ul>
+<li><strong>Hospital pharmacies:</strong> Major diabetes centers and endocrinology departments stock CGM systems.</li>
+<li><strong>Online medical stores:</strong> NetMeds, PharmEasy, 1mg, Apollo Pharmacy — availability varies.</li>
+<li><strong>Authorized distributors:</strong> Abbott (FreeStyle Libre), Dexcom (through select partners).</li>
+<li><strong>Doctor's prescription:</strong> Required for purchase in most cases.</li>
+</ul>
+
+<h3>Approximate Costs (2026)</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>System</th><th>Sensor Cost (per unit)</th><th>Reader/Transmitter</th><th>Monthly Cost Estimate</th></tr>
+</thead>
+<tbody>
+<tr><td>FreeStyle Libre 2</td><td>Rs. 2,500–3,500</td><td>Rs. 5,000–6,000 (one-time for reader) or use smartphone app</td><td>Rs. 5,000–7,000 (2 sensors/month)</td></tr>
+<tr><td>FreeStyle Libre 3</td><td>Rs. 3,000–4,000</td><td>Smartphone app only (no reader)</td><td>Rs. 6,000–8,000 (2 sensors/month)</td></tr>
+<tr><td>Dexcom G7</td><td>Rs. 8,000–12,000</td><td>Smartphone app or receiver</td><td>Rs. 24,000–36,000 (3 sensors/month)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Insurance Coverage</h3>
+<ul>
+<li><strong>Most private health insurance:</strong> Does not routinely cover CGM sensors (considered consumables).</li>
+<li><strong>Some corporate policies:</strong> May provide partial reimbursement with prescription and medical necessity letter.</li>
+<li><strong>CGHS/ECHS:</strong> Limited coverage; approval may be possible for Type 1 diabetes or brittle diabetes with documented hypoglycemia.</li>
+<li><strong>Advocacy tip:</strong> Request a letter from your endocrinologist documenting medical necessity (frequent hypoglycemia, HbA1c not at target, pregnancy) to support insurance claims.</li>
+</ul>
+
+<div class="tip">
+<strong>Cost-saving strategies:</strong> Some patients use CGM intermittently (e.g., 2 weeks per month, or during dose adjustments) rather than continuously. This provides valuable pattern data while managing costs. Ask your doctor if intermittent use is appropriate for your situation.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F3AF;</span> Understanding CGM Data</h2>
+
+<h3>Time in Range (TIR)</h3>
+<p>Time in Range is the most important CGM metric. It tells you what percentage of the day your glucose is within your target range — typically <strong>70–180 mg/dL (3.9–10.0 mmol/L)</strong>.</p>
+
+<div class="gauge-row">
+<div class="gauge"><div class="gauge-circle green" style="--pct:70%"><span>&gt;70%</span></div><div class="gauge-label">Time in Range</div></div>
+<div class="gauge"><div class="gauge-circle orange" style="--pct:25%"><span>&lt;4%</span></div><div class="gauge-label">Time Below Range</div></div>
+<div class="gauge"><div class="gauge-circle green" style="--pct:36%"><span>&le;36%</span></div><div class="gauge-label">Coefficient of Variation</div></div>
+</div>
+
+<h3>International Consensus Targets</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Metric</th><th>Target</th><th>Range</th></tr>
+</thead>
+<tbody>
+<tr><td>Time in Range (TIR)</td><td>&gt; 70%</td><td>70–180 mg/dL</td></tr>
+<tr><td>Time below range (TBR)</td><td>&lt; 4%</td><td>&lt; 70 mg/dL</td></tr>
+<tr><td>Time significantly below</td><td>&lt; 1%</td><td>&lt; 54 mg/dL</td></tr>
+<tr><td>Time above range (TAR)</td><td>&lt; 25%</td><td>&gt; 180 mg/dL</td></tr>
+<tr><td>Time significantly above</td><td>&lt; 5%</td><td>&gt; 250 mg/dL</td></tr>
+<tr><td>Glucose variability (CV)</td><td>&le; 36%</td><td>Coefficient of variation</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Glucose Variability</h3>
+<p>Variability refers to how much your glucose swings up and down. Even if your average glucose is good, high variability (frequent spikes and drops) is associated with increased risk of complications and hypoglycemia. The <strong>Coefficient of Variation (CV)</strong> should ideally be &le; 36%.</p>
+
+<h3>Ambulatory Glucose Profile (AGP)</h3>
+<p>The AGP is a standardized report that combines 14 days of CGM data into a single 24-hour graph:</p>
+<ul>
+<li><strong>Median line (50th percentile):</strong> Your "typical" glucose at each time of day.</li>
+<li><strong>Interquartile range (25th–75th percentile):</strong> The middle 50% of readings — where you spend most of your time.</li>
+<li><strong>10th–90th percentile bands:</strong> The wider range capturing most of your variability.</li>
+</ul>
+<p>AGP makes patterns immediately visible: dawn phenomenon appears as a morning rise, post-meal spikes show as peaks after mealtimes, and overnight lows appear as dips during sleep hours.</p>
+
+<div class="note">
+<strong>TIR and HbA1c:</strong> A Time in Range of 70% roughly corresponds to an HbA1c of 7.0%. Each 5% increase in TIR is associated with clinically meaningful reductions in diabetes complications. TIR gives you actionable, real-time feedback that HbA1c (measured every 3 months) cannot provide.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x23F0;</span> CGM vs. Fingerstick — When You Still Need to Prick</h2>
+<p>While CGMs reduce the need for fingersticks dramatically, there are situations where a confirmatory fingerstick is still valuable:</p>
+
+<h3>When to Confirm with Fingerstick</h3>
+<ul>
+<li><strong>Symptoms don't match the CGM reading:</strong> If you feel hypoglycemic but CGM shows normal glucose (or vice versa), always trust your symptoms and confirm with a fingerstick.</li>
+<li><strong>Before treating hypoglycemia (if unsure):</strong> If CGM shows low but you feel fine, confirm before eating glucose.</li>
+<li><strong>Rapidly changing glucose:</strong> During the 5–15 minute lag time (see below), CGM may not reflect actual blood glucose during fast rises or falls.</li>
+<li><strong>Sensor warmup period:</strong> The first 1–12 hours after insertion may be less accurate.</li>
+<li><strong>Compression artifacts:</strong> If you've been lying on the sensor, readings may be falsely low.</li>
+<li><strong>Critical decisions:</strong> Before driving when glucose is borderline low, or before giving a large insulin correction.</li>
+</ul>
+
+<h3>Understanding Lag Time</h3>
+<p>CGM readings lag behind actual blood glucose by approximately <strong>5–15 minutes</strong>. This is because:</p>
+<ul>
+<li>Glucose moves from blood into interstitial fluid, then is detected by the sensor.</li>
+<li>The CGM algorithm applies smoothing and filtering, adding slight delay.</li>
+</ul>
+<p>During stable glucose, this lag is clinically insignificant. During rapid changes (after eating, during exercise, after insulin injection), the lag matters more. This is why trend arrows are so valuable — they tell you where glucose is <em>heading</em>, not just where it is now.</p>
+
+<div class="warning">
+<strong>Safety first:</strong> When in doubt, do a fingerstick. CGMs are highly accurate for most situations, but no technology is perfect. If something doesn't feel right, trust your body and verify.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4C8;</span> Reading Your Trends — Arrows and Patterns</h2>
+
+<h3>Understanding Trend Arrows</h3>
+<p>Trend arrows are one of the most powerful features of CGM. They show you the direction and speed of glucose change:</p>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Arrow</th><th>Meaning</th><th>Rate of Change</th><th>Action Consideration</th></tr>
+</thead>
+<tbody>
+<tr><td>&uarr;&uarr; (Double up)</td><td>Rising rapidly</td><td>&gt; 3 mg/dL/min (180 mg/dL/hour)</td><td>Consider correction dose if above target; check for missed bolus</td></tr>
+<tr><td>&nearr; (Single up/diagonal)</td><td>Rising</td><td>2–3 mg/dL/min</td><td>Monitor closely; may need action if trending high</td></tr>
+<tr><td>&rarr; (Flat/horizontal)</td><td>Stable</td><td>&lt; 1 mg/dL/min</td><td>Ideal — glucose is steady</td></tr>
+<tr><td>&searr; (Single down/diagonal)</td><td>Falling</td><td>2–3 mg/dL/min</td><td>If approaching low, consider preventive snack</td></tr>
+<tr><td>&darr;&darr; (Double down)</td><td>Falling rapidly</td><td>&gt; 3 mg/dL/min</td><td>Urgent — eat fast-acting carbs even if not yet low</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Common Patterns and What They Mean</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Pattern</th><th>What It Looks Like</th><th>Possible Causes</th><th>Potential Solutions</th></tr>
+</thead>
+<tbody>
+<tr><td>Dawn phenomenon</td><td>Glucose rises 4–8 AM without eating</td><td>Hormonal surge (cortisol, growth hormone) in early morning</td><td>Adjust basal insulin timing/dose; avoid late-night snacks</td></tr>
+<tr><td>Post-meal spikes</td><td>Sharp rise 30–90 min after eating</td><td>Too many carbs; insufficient bolus; eating too fast; bolus timing</td><td>Pre-bolus 15–20 min before meals; reduce carbs; add fiber/protein</td></tr>
+<tr><td>Overnight lows</td><td>Glucose drops during sleep (often 2–4 AM)</td><td>Excessive basal insulin; evening exercise; alcohol</td><td>Reduce basal; bedtime snack with protein; adjust evening exercise timing</td></tr>
+<tr><td>Roller coaster</td><td>Frequent highs and lows throughout day</td><td>Overcorrecting highs; rebound eating after lows; inconsistent meals</td><td>Follow the "rule of 15"; wait before correcting; improve meal consistency</td></tr>
+<tr><td>Flat overnight, rising morning</td><td>Stable during sleep, then rises upon waking</td><td>Dawn phenomenon or foot-on-floor phenomenon</td><td>Adjusted basal timing or an early morning dose</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="tip">
+<strong>Pattern recognition tip:</strong> Look at your AGP report for at least 14 days of data. Single-day spikes or lows may be one-time events (missed dose, unusual meal). True patterns repeat consistently at the same time of day across multiple days. Only adjust insulin based on confirmed patterns (same issue on 3+ days).
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F514;</span> Alerts and Alarms</h2>
+<p>CGM alerts can be lifesaving, but they can also become overwhelming if not set appropriately. Finding the right balance prevents "alarm fatigue."</p>
+
+<h3>Types of Alerts</h3>
+<ul>
+<li><strong>Low glucose alert:</strong> Triggers when glucose falls below a set threshold (commonly 70–80 mg/dL).</li>
+<li><strong>Urgent low alert:</strong> Triggers at a critically low level (typically 55 mg/dL) — this one should never be silenced.</li>
+<li><strong>High glucose alert:</strong> Triggers when glucose rises above a set threshold (commonly 180–250 mg/dL).</li>
+<li><strong>Predictive low alert:</strong> Warns you that glucose is projected to go low in the next 10–20 minutes, giving you time to act.</li>
+<li><strong>Rate of change alerts:</strong> Warns when glucose is rising or falling rapidly.</li>
+<li><strong>Signal loss alert:</strong> Notifies when the receiver has lost communication with the transmitter.</li>
+</ul>
+
+<h3>Setting Effective Thresholds</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Alert Type</th><th>Starting Threshold</th><th>Tighter Threshold (Advanced)</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>Low alert</td><td>80 mg/dL</td><td>70 mg/dL</td><td>Give yourself time to act before reaching 70</td></tr>
+<tr><td>Urgent low</td><td>55 mg/dL</td><td>55 mg/dL (don't change)</td><td>This is a safety alert — keep it enabled always</td></tr>
+<tr><td>High alert</td><td>250 mg/dL</td><td>180–200 mg/dL</td><td>Start high, then lower as control improves</td></tr>
+<tr><td>Predictive low</td><td>20 min warning</td><td>10–20 min</td><td>Very useful for preventing hypoglycemia</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Avoiding Alarm Fatigue</h3>
+<ul>
+<li><strong>Start with wider thresholds:</strong> If you get too many alerts, you'll start ignoring them. Begin with generous settings and tighten gradually.</li>
+<li><strong>Use snooze appropriately:</strong> Snooze an alert if you've already taken action and need time for it to work — but don't snooze indefinitely.</li>
+<li><strong>Customize for time of day:</strong> Some CGMs allow different thresholds for day vs. night. You might want stricter overnight low alerts.</li>
+<li><strong>Prioritize low alerts:</strong> High alerts can be annoying but are rarely dangerous in the short term. Low alerts are critical for safety.</li>
+<li><strong>Review alert history:</strong> If you're getting dozens of alerts daily, work with your diabetes team to address the underlying patterns rather than just silencing alarms.</li>
+</ul>
+
+<div class="warning">
+<strong>Never disable the urgent low alert.</strong> This alert can be lifesaving, especially overnight. Alarm fatigue is a real problem, but the solution is to improve glucose control and adjust other settings — not to silence critical safety alarms.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1FA79;</span> Sensor Placement and Care</h2>
+
+<h3>Approved Sensor Sites</h3>
+<ul>
+<li><strong>FreeStyle Libre:</strong> Back of upper arm only.</li>
+<li><strong>Dexcom G6/G7:</strong> Abdomen (adults), upper buttocks (children 2–17), back of upper arm (with prescription for off-label use in some countries).</li>
+<li><strong>Medtronic Guardian:</strong> Abdomen, back of upper arm.</li>
+<li><strong>Eversense:</strong> Upper arm (implanted by healthcare provider).</li>
+</ul>
+
+<h3>Tips for Successful Sensor Application</h3>
+<ol>
+<li><strong>Clean the site:</strong> Use soap and water or an alcohol wipe. Let the skin dry completely before application — moisture affects adhesion.</li>
+<li><strong>Avoid problem areas:</strong> Don't place sensors on scars, moles, stretch marks, tattoos, or areas with lipohypertrophy (from insulin injections).</li>
+<li><strong>Rotate sites:</strong> Don't apply a new sensor in exactly the same spot as the previous one. Rotate within the approved area to prevent skin irritation.</li>
+<li><strong>Press firmly:</strong> After insertion, press the adhesive patch firmly for 10–30 seconds to ensure good contact.</li>
+<li><strong>Consider skin prep:</strong> If adhesion is a problem, use a skin barrier wipe (e.g., Skin-Tac, IV Prep) before application — let it dry completely first.</li>
+</ol>
+
+<h3>Keeping the Sensor Secure</h3>
+<ul>
+<li><strong>Overpatch/cover patch:</strong> An additional adhesive patch placed over the sensor. Most CGM manufacturers provide these free of charge.</li>
+<li><strong>Medical tape:</strong> Hypafix, Tegaderm, or KT tape can reinforce edges that start to lift.</li>
+<li><strong>Armband/body tape:</strong> For arm sensors, a fabric band can provide extra security during sports.</li>
+<li><strong>Avoid direct water jets:</strong> While CGMs are water-resistant, direct shower jets or prolonged soaking can loosen adhesive.</li>
+</ul>
+
+<h3>Compression Lows</h3>
+<p>"Compression lows" occur when pressure on the sensor (lying on it, tight clothing, seatbelt) causes falsely low readings. The pressure reduces blood flow to the sensor area, lowering interstitial glucose temporarily.</p>
+<ul>
+<li>These are usually obvious because glucose "drops" suddenly and recovers when you change position.</li>
+<li>If you get unexplained low readings at night, check if you're sleeping on your sensor.</li>
+<li>Confirm with a fingerstick before treating — compression lows are not real hypoglycemia.</li>
+</ul>
+
+<div class="tip">
+<strong>Skin sensitivity:</strong> Some people develop skin irritation or allergic reactions to CGM adhesive. Solutions include: applying a barrier wipe (Cavilon, Flonase nasal spray) before the sensor, using a different brand of CGM, or applying a hydrocolloid patch as a buffer between skin and adhesive.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4A1;</span> Getting the Most from Your CGM</h2>
+
+<h3>Pattern Recognition — Using Data to Improve Control</h3>
+<ul>
+<li><strong>Review your data regularly:</strong> Spend 5–10 minutes weekly looking at your AGP and daily graphs. Look for patterns, not individual readings.</li>
+<li><strong>Use the 3-day rule:</strong> Only adjust insulin based on patterns that repeat for 3 or more days at the same time.</li>
+<li><strong>Focus on one thing at a time:</strong> If you have high fasting glucose AND post-lunch spikes, fix one first. Making multiple changes simultaneously makes it impossible to know what worked.</li>
+<li><strong>Correlate with events:</strong> Note what you ate, when you exercised, and how you felt. Many apps let you tag meals and activities.</li>
+</ul>
+
+<h3>Sharing Data with Your Doctor</h3>
+<ul>
+<li><strong>Generate reports before appointments:</strong> All CGM systems can generate PDF reports (AGP, time in range, statistics). Email or print these for your doctor.</li>
+<li><strong>Share access:</strong> Many CGMs allow you to share real-time data with healthcare providers or family members via follower apps (LibreLinkUp, Dexcom Follow, CarePartner).</li>
+<li><strong>Cloud platforms:</strong> LibreView, Dexcom Clarity, and Glooko aggregate your data for easy review.</li>
+<li><strong>Come with questions:</strong> Circle specific patterns in your data and ask your doctor about them. This makes appointments more productive.</li>
+</ul>
+
+<h3>Integration with Insulin Pumps — Automated Insulin Delivery (AID)</h3>
+<p>The ultimate use of CGM data is integration with an insulin pump in a "closed-loop" or "hybrid closed-loop" system:</p>
+<ul>
+<li><strong>How it works:</strong> The CGM sends glucose data to the pump every 5 minutes. The pump algorithm automatically adjusts basal insulin delivery — increasing when glucose is rising, decreasing or suspending when glucose is falling.</li>
+<li><strong>Benefits:</strong> Significantly improved time in range (often &gt; 70–80%), reduced hypoglycemia, less mental burden of constant decision-making.</li>
+<li><strong>Current systems in India:</strong> Medtronic 780G + Guardian 4, Tandem Control-IQ + Dexcom G6/G7, Omnipod 5 + Dexcom G6/G7 (availability varies).</li>
+<li><strong>Still requires user input:</strong> You must still enter carbohydrates and confirm boluses for meals. No system is fully autonomous yet.</li>
+</ul>
+
+<h3>DIY/Open-Source Loops</h3>
+<p>Some tech-savvy users build their own closed-loop systems using open-source software (Loop, OpenAPS, AndroidAPS) with compatible pumps and CGMs. While these can be highly effective, they require technical knowledge, are not FDA/regulatory approved, and should only be pursued with full understanding of the risks and responsibilities.</p>
+
+<div class="note">
+<strong>The future of CGM:</strong> Technology is advancing rapidly. Non-invasive CGMs (measuring glucose without a needle), longer-lasting implantable sensors, and fully closed-loop "artificial pancreas" systems are in development. Stay connected with your diabetes care team to learn about new options as they become available.
+</div>
+</div>
+
+<div class="section see-also"><h3>Related Topics</h3><ul>
+<li><a href="blood-sugar-monitoring.html">Blood Sugar Monitoring</a></li>
+<li><a href="insulin-guide.html">Insulin Guide</a></li>
+<li><a href="hypoglycemia.html">Hypoglycemia</a></li>
+<li><a href="tracking-tools.html">Tracking Tools</a></li>
+</ul></div>
+<div class="page-nav">
+<a class="prev" href="blood-sugar-monitoring.html">Blood Sugar Monitoring</a>
+<a class="next" href="insulin-pumps.html">Insulin Pumps</a>
+</div>
+</div>
+<div class="disclaimer">This content is for educational purposes only and does not replace professional medical advice. The creators of SugarWise are not medical professionals. Do not start, stop, or change any medication without consulting your doctor. In case of emergency, call 112 (India) or your local emergency number. <a href="terms-of-use.html">Read full Terms of Use &amp; Medical Disclaimer</a></div>
+<div class="privacy-notice">SugarWise does not use cookies, collect personal data, or track users.</div>
+<div class="footer"><span class="ai-badge">AI-Assisted Content</span><br>SugarWise &bull; Comprehensive Diabetes Management Companion &bull; <a href="terms-of-use.html">Terms of Use</a> &bull; Last updated: January 2026</div>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">&#9790;</button>
+<button class="scroll-top" aria-label="Scroll to top" aria-label="Scroll to top" id="scrollTop" title="Back to top">&uarr;</button>
+<script>
+var sb=document.getElementById('scrollTop');window.addEventListener('scroll',function(){sb.classList.toggle('visible',window.scrollY>400)});sb.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+document.querySelectorAll('.accordion-header').forEach(function(h){h.addEventListener('click',function(){this.parentElement.classList.toggle('open')})});
+</script>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}
+(function(){var t=document.getElementById('themeToggle');var saved=localStorage.getItem('theme');if(saved){document.documentElement.setAttribute('data-theme',saved);t.textContent=saved==='dark'?'\u2600':'\u263E';}t.addEventListener('click',function(){var d=document.documentElement.getAttribute('data-theme')==='dark'?'':'dark';document.documentElement.setAttribute('data-theme',d);localStorage.setItem('theme',d);t.textContent=d==='dark'?'\u2600':'\u263E';});})();
+</script></body></html>
