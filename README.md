@@ -14,7 +14,7 @@ A free, open-source educational website covering 65+ diabetes management topics 
 ## Important Disclaimers
 
 - This is **NOT** a medical service and does **NOT** provide medical advice
-- Created by **non-medical professionals** with AI assistance (Claude by Anthropic)
+- Created by **non-medical professionals** with AI assistance
 - Content has **NOT** been reviewed by licensed healthcare providers
 - **Always consult a qualified doctor** before making any medical decisions
 - Read the full [Terms of Use & Medical Disclaimer](https://aravindcleaerr.github.io/diabetes-guide/terms-of-use.html)
