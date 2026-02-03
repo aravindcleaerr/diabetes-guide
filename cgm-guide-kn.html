@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="kn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CGM ಮಾರ್ಗದರ್ಶಿ — ಶುಗರ್‌ವೈಸ್</title><link rel="stylesheet" href="styles.css"><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#1a7a5a"><meta property="og:type" content="website"><meta property="og:site_name" content="SugarWise"><meta property="og:url" content="https://aravindcleaerr.github.io/diabetes-guide/cgm-guide-kn.html"><meta property="og:description" content="ಉಚಿತ ಶೈಕ್ಷಣಿಕ ಮಧುಮೇಹ ನಿರ್ವಹಣೆ ಮಾರ್ಗದರ್ಶಿ. ವೈದ್ಯಕೀಯ ಸಲಹೆಯಲ್ಲ."><meta property="og:image" content="https://aravindcleaerr.github.io/diabetes-guide/og-image.svg"></head><body>
+<a href="#main" class="skip-link">ವಿಷಯಕ್ಕೆ ಹೋಗಿ</a>
+<nav class="navbar"><div class="navbar-inner"><a class="brand" href="index.html">ಶುಗರ್‌ವೈಸ್</a><a class="lang-switch" href="cgm-guide.html">English</a><a class="home-link" href="index.html">ಎಲ್ಲಾ ವಿಷಯಗಳು</a></div></nav>
+<div class="container" id="main" role="main">
+<div class="page-header"><h1>ನಿರಂತರ Glucose ಮಾನಿಟರ್‌ಗಳು (CGM)</h1><p>ನೈಜ-ಸಮಯದ glucose ಟ್ರ್ಯಾಕಿಂಗ್ — CGM ಗಳು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತವೆ, ಜನಪ್ರಿಯ ಸಾಧನಗಳು ಮತ್ತು ನಿಮ್ಮ ಡೇಟಾದಿಂದ ಹೆಚ್ಚಿನದನ್ನು ಪಡೆಯುವುದು</p></div>
+<div class="last-reviewed">ವಿಷಯವನ್ನು ಕೊನೆಯದಾಗಿ ಪರಿಶೀಲಿಸಲಾಗಿದೆ: ಜನವರಿ 2026 | AI-ಸಹಾಯಿತ ವಿಷಯ</div>
+
+<div class="illus">
+<svg width="320" height="160" viewBox="0 0 320 160" xmlns="http://www.w3.org/2000/svg">
+<!-- Arm silhouette -->
+<ellipse cx="90" cy="90" rx="55" ry="70" fill="#e8d5c4" stroke="#c9a589" stroke-width="1.5"/>
+<!-- CGM sensor on arm -->
+<rect x="65" y="55" width="35" height="35" rx="6" fill="#f5f7fa" stroke="#1a7a5a" stroke-width="2"/>
+<circle cx="82" cy="72" r="8" fill="#1a7a5a"/>
+<circle cx="82" cy="72" r="4" fill="#ffffff" opacity="0.6"/>
+<!-- Sensor blinking light -->
+<circle cx="82" cy="72" r="2" fill="#4ade80">
+  <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+</circle>
+<!-- Wireless signal waves -->
+<path d="M100 60 Q110 55 115 60" stroke="#1a7a5a" stroke-width="1.5" fill="none" opacity="0.6">
+  <animate attributeName="opacity" values="0;0.6;0" dur="2s" repeatCount="indefinite"/>
+</path>
+<path d="M105 55 Q118 47 125 55" stroke="#1a7a5a" stroke-width="1.5" fill="none" opacity="0.4">
+  <animate attributeName="opacity" values="0;0.4;0" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+</path>
+<path d="M110 50 Q126 40 135 50" stroke="#1a7a5a" stroke-width="1.5" fill="none" opacity="0.2">
+  <animate attributeName="opacity" values="0;0.2;0" dur="2s" repeatCount="indefinite" begin="0.6s"/>
+</path>
+<!-- Data flow dots -->
+<circle cx="140" cy="55" r="3" fill="#1a7a5a">
+  <animate attributeName="cx" values="120;170" dur="1.5s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="150" cy="60" r="3" fill="#1a7a5a">
+  <animate attributeName="cx" values="120;170" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+  <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+</circle>
+<circle cx="160" cy="50" r="3" fill="#1a7a5a">
+  <animate attributeName="cx" values="120;170" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+  <animate attributeName="opacity" values="1;0" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+</circle>
+<!-- Smartphone -->
+<rect x="180" y="25" width="55" height="100" rx="8" fill="#2d3748" stroke="#1a202c" stroke-width="2"/>
+<rect x="185" y="35" width="45" height="75" rx="2" fill="#e6f5ef"/>
+<!-- Phone screen content - glucose reading -->
+<text x="207" y="58" text-anchor="middle" font-size="18" fill="#1a7a5a" font-weight="800">
+  118<animate attributeName="fill" values="#1a7a5a;#1a7a5a;#e8913a;#1a7a5a" dur="8s" repeatCount="indefinite"/>
+</text>
+<text x="207" y="68" text-anchor="middle" font-size="6" fill="#64748b">mg/dL</text>
+<!-- Trend arrow on phone -->
+<path d="M200 78 L207 72 L214 78" stroke="#1a7a5a" stroke-width="2" fill="none">
+  <animate attributeName="d" values="M200 78 L207 72 L214 78;M200 75 L207 75 L214 75;M200 72 L207 78 L214 72;M200 75 L207 75 L214 75;M200 78 L207 72 L214 78" dur="8s" repeatCount="indefinite"/>
+</path>
+<!-- Mini glucose graph on phone -->
+<polyline points="188,95 193,92 198,97 203,90 208,93 213,88 218,91 223,85 228,89" stroke="#1a7a5a" stroke-width="1.5" fill="none">
+  <animate attributeName="points" values="188,95 193,92 198,97 203,90 208,93 213,88 218,91 223,85 228,89;188,93 193,95 198,90 203,93 208,88 213,92 218,87 223,90 228,86;188,95 193,92 198,97 203,90 208,93 213,88 218,91 223,85 228,89" dur="4s" repeatCount="indefinite"/>
+</polyline>
+<!-- Time in Range bar -->
+<rect x="188" y="100" width="40" height="6" rx="2" fill="#e2e8f0"/>
+<rect x="188" y="100" width="28" height="6" rx="2" fill="#4ade80"/>
+<!-- Phone home button -->
+<circle cx="207" cy="118" r="4" fill="#4a5568"/>
+<!-- Labels -->
+<text x="82" y="145" text-anchor="middle" font-size="9" fill="#64748b">CGM ಸೆನ್ಸಾರ್</text>
+<text x="207" y="145" text-anchor="middle" font-size="9" fill="#64748b">ನೈಜ-ಸಮಯ ಡೇಟಾ</text>
+<!-- Connection line -->
+<line x1="135" y1="72" x2="180" y2="60" stroke="#1a7a5a" stroke-width="1" stroke-dasharray="4,2" opacity="0.4"/>
+</svg>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4E1;</span> CGM ಎಂದರೇನು?</h2>
+<p><strong>ನಿರಂತರ Glucose ಮಾನಿಟರ್ (CGM)</strong> ಹಗಲು ಮತ್ತು ರಾತ್ರಿಯುದ್ದಕ್ಕೂ glucose ಮಟ್ಟಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡುವ ಸಾಧನವಾಗಿದ್ದು, ಆಗಾಗ್ಗೆ ಬೆರಳು ಚುಚ್ಚುವಿಕೆ ಅಗತ್ಯವಿಲ್ಲದೆ ಬಹುತೇಕ-ನಿರಂತರ ಡೇಟಾವನ್ನು ಒದಗಿಸುತ್ತದೆ. ಒಂದೇ ಸ್ನ್ಯಾಪ್‌ಶಾಟ್ ನೀಡುವ ಸಾಂಪ್ರದಾಯಿಕ ರಕ್ತ glucose ಮೀಟರ್‌ಗಳಿಗಿಂತ ಭಿನ್ನವಾಗಿ, CGM ಗಳು ನಿಮ್ಮ glucose ಮಾದರಿಗಳ ಸಂಪೂರ್ಣ ಚಿತ್ರವನ್ನು ಬಹಿರಂಗಪಡಿಸುತ್ತವೆ.</p>
+
+<h3>CGM vs. ಬೆರಳು ಚುಚ್ಚುವಿಕೆ — ಪ್ರಮುಖ ವ್ಯತ್ಯಾಸಗಳು</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>ವೈಶಿಷ್ಟ್ಯ</th><th>ಬೆರಳು ಚುಚ್ಚುವಿಕೆ (SMBG)</th><th>CGM</th></tr>
+</thead>
+<tbody>
+<tr><td>ಏನನ್ನು ಅಳೆಯುತ್ತದೆ</td><td>ಕ್ಯಾಪಿಲ್ಲರಿ ರಕ್ತ glucose</td><td>ಅಂತರಕೋಶಿಕ ದ್ರವ glucose</td></tr>
+<tr><td>ದಿನಕ್ಕೆ ರೀಡಿಂಗ್‌ಗಳು</td><td>4–10 (ಹಸ್ತಚಾಲಿತ)</td><td>288+ (ಸ್ವಯಂಚಾಲಿತ, ಪ್ರತಿ 5 ನಿಮಿಷ)</td></tr>
+<tr><td>ನೋವು/ಅಸ್ವಸ್ಥತೆ</td><td>ಪ್ರತಿ ಬಾರಿ ಬೆರಳು ಚುಚ್ಚುವಿಕೆ</td><td>ಪ್ರತಿ 7–14 ದಿನಗಳಿಗೆ ಒಂದು ಸೆನ್ಸಾರ್ ಸೇರ್ಪಡೆ</td></tr>
+<tr><td>ಟ್ರೆಂಡ್ ಮಾಹಿತಿ</td><td>ಯಾವುದೂ ಇಲ್ಲ — ಆ ಕ್ಷಣದ ಮಾತ್ರ</td><td>ಬಾಣಗಳು ದಿಕ್ಕು ಮತ್ತು ಬದಲಾವಣೆ ದರವನ್ನು ತೋರಿಸುತ್ತವೆ</td></tr>
+<tr><td>ರಾತ್ರಿಯ ಡೇಟಾ</td><td>ಅಪರೂಪವಾಗಿ ಸೆರೆಹಿಡಿಯಲಾಗುತ್ತದೆ (ಎಚ್ಚರಗೊಳ್ಳಬೇಕು)</td><td>ನೀವು ನಿದ್ದೆ ಮಾಡುವಾಗ ನಿರಂತರ ಮಾನಿಟರಿಂಗ್</td></tr>
+<tr><td>ಎಚ್ಚರಿಕೆಗಳು</td><td>ಯಾವುದೂ ಇಲ್ಲ</td><td>ಕಸ್ಟಮೈಸ್ ಮಾಡಬಹುದಾದ ಹೆಚ್ಚಿನ/ಕಡಿಮೆ ಅಲಾರಮ್‌ಗಳು</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="note">
+<strong>ಅಂತರಕೋಶಿಕ vs. ರಕ್ತ Glucose:</strong> CGM ಗಳು ಅಂತರಕೋಶಿಕ ದ್ರವದಲ್ಲಿ (ಜೀವಕೋಶಗಳ ನಡುವಿನ ದ್ರವ) glucose ಅನ್ನು ಅಳೆಯುತ್ತವೆ, ಬೆರಳು ಚುಚ್ಚುವಿಕೆ ಮೀಟರ್‌ಗಳಿಂದ ಅಳೆಯುವ ಕ್ಯಾಪಿಲ್ಲರಿ ರಕ್ತ glucose ನಿಂದ ನೇರವಾಗಿ ಅಲ್ಲ. ಇದು ಶಾರೀರಿಕವಾಗಿ ಭಿನ್ನವಾಗಿದೆ. ಹೆಚ್ಚಿನ ಸಮಯ, ಮೌಲ್ಯಗಳು ತುಂಬಾ ಹತ್ತಿರದಲ್ಲಿವೆ, ಆದರೆ ವೇಗವಾಗಿ ಬದಲಾಗುತ್ತಿರುವ glucose ಮಟ್ಟಗಳ ಸಮಯದಲ್ಲಿ ಅವು ಬೇರೆಯಾಗಬಹುದು.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x2699;&#xFE0F;</span> CGM ಗಳು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತವೆ</h2>
+<p>CGM ವ್ಯವಸ್ಥೆಯು ನಿರಂತರ glucose ಡೇಟಾ ತಲುಪಿಸಲು ಒಟ್ಟಿಗೆ ಕೆಲಸ ಮಾಡುವ ಮೂರು ಮುಖ್ಯ ಘಟಕಗಳನ್ನು ಒಳಗೊಂಡಿದೆ:</p>
+
+<h3>1. ಸೆನ್ಸಾರ್</h3>
+<ul>
+<li>ಚರ್ಮದ ಕೆಳಗೆ ಸೇರಿಸಲಾದ ಸಣ್ಣ, ಹೊಂದಿಕೊಳ್ಳುವ ಫಿಲಮೆಂಟ್ (ಕೂದಲಿನ ಅಗಲದಷ್ಟು).</li>
+<li>ಅಂತರಕೋಶಿಕ ದ್ರವದಲ್ಲಿ glucose ನೊಂದಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುವ ಕಿಣ್ವವನ್ನು (glucose oxidase) ಒಳಗೊಂಡಿದೆ.</li>
+<li>Glucose ಸಾಂದ್ರತೆಗೆ ಅನುಪಾತದಲ್ಲಿ ವಿದ್ಯುತ್ ಸಂಕೇತವನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ.</li>
+<li>ಬದಲಿ ಅಗತ್ಯವಿರುವ ಮೊದಲು 7–14 ದಿನಗಳು ಇರುತ್ತದೆ (ವ್ಯವಸ್ಥೆಯನ್ನು ಅವಲಂಬಿಸಿ).</li>
+<li>ಸ್ವಯಂಚಾಲಿತ ಅನ್ವಯಕಾರಕ ಬಳಸಿ ಸೇರ್ಪಡೆ ತ್ವರಿತ (ಸಾಮಾನ್ಯವಾಗಿ ನೋವುರಹಿತ).</li>
+</ul>
+
+<h3>2. ಟ್ರಾನ್ಸ್‌ಮಿಟರ್</h3>
+<ul>
+<li>ಸೆನ್ಸಾರ್‌ಗೆ ಲಗತ್ತಿಸುವ ಸಣ್ಣ ಸಾಧನ (ಕೆಲವು ವ್ಯವಸ್ಥೆಗಳು ಸಮಗ್ರ ಟ್ರಾನ್ಸ್‌ಮಿಟರ್ + ಸೆನ್ಸಾರ್ ಹೊಂದಿವೆ).</li>
+<li>ಸೆನ್ಸಾರ್‌ನಿಂದ ವಿದ್ಯುತ್ ಸಂಕೇತವನ್ನು glucose ರೀಡಿಂಗ್‌ಗಳಾಗಿ ಪರಿವರ್ತಿಸುತ್ತದೆ.</li>
+<li>Bluetooth ಮೂಲಕ ಡೇಟಾವನ್ನು ರಿಸೀವರ್/ಸ್ಮಾರ್ಟ್‌ಫೋನ್‌ಗೆ ವೈರ್‌ಲೆಸ್ ಆಗಿ ಕಳುಹಿಸುತ್ತದೆ.</li>
+<li>ಬ್ಯಾಟರಿಯಿಂದ ಚಾಲಿತ — ಮರುಬಳಕೆ ಮಾಡಬಹುದಾದ ಟ್ರಾನ್ಸ್‌ಮಿಟರ್‌ಗಳು 3–12 ತಿಂಗಳು ಇರುತ್ತವೆ; ಕೆಲವು ಸೆನ್ಸಾರ್‌ನೊಂದಿಗೆ ಡಿಸ್ಪೋಸೆಬಲ್.</li>
+</ul>
+
+<h3>3. ರಿಸೀವರ್/ಡಿಸ್‌ಪ್ಲೇ</h3>
+<ul>
+<li>ಮೀಸಲಾದ ಹ್ಯಾಂಡ್‌ಹೆಲ್ಡ್ ರಿಸೀವರ್ ಸಾಧನ, ಸ್ಮಾರ್ಟ್‌ಫೋನ್ ಆಪ್ ಅಥವಾ ಸ್ಮಾರ್ಟ್‌ವಾಚ್ ಆಗಿರಬಹುದು.</li>
+<li>ಪ್ರಸ್ತುತ glucose, ಟ್ರೆಂಡ್ ಬಾಣಗಳು ಮತ್ತು ಐತಿಹಾಸಿಕ ಗ್ರಾಫ್‌ಗಳನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ.</li>
+<li>ಹೆಚ್ಚಿನ, ಕಡಿಮೆ ಮತ್ತು ತ್ವರಿತ ಬದಲಾವಣೆಗಳಿಗೆ ಆಡಿಯೋ/ಕಂಪನ ಎಚ್ಚರಿಕೆಗಳನ್ನು ಪ್ರಚೋದಿಸುತ್ತದೆ.</li>
+<li>ಪರಿಶೀಲನೆ ಮತ್ತು ಆರೋಗ್ಯ ಸೇವಾ ಪೂರೈಕೆದಾರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಲು ಡೇಟಾ ಸಂಗ್ರಹಿಸುತ್ತದೆ.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4F1;</span> ಜನಪ್ರಿಯ CGM ವ್ಯವಸ್ಥೆಗಳು</h2>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>ವ್ಯವಸ್ಥೆ</th><th>ಸೆನ್ಸಾರ್ ಅವಧಿ</th><th>ಕ್ಯಾಲಿಬ್ರೇಶನ್</th><th>ಪ್ರಮುಖ ವೈಶಿಷ್ಟ್ಯಗಳು</th><th>ಯಾರಿಗೆ ಉತ್ತಮ</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>FreeStyle Libre 2</strong></td><td>14 ದಿನಗಳು</td><td>ಫ್ಯಾಕ್ಟರಿ-ಕ್ಯಾಲಿಬ್ರೇಟೆಡ್</td><td>ಕೈಗೆಟಕುವ; ಐಚ್ಛಿಕ ನೈಜ-ಸಮಯ ಅಲಾರಮ್‌ಗಳು; ಸ್ಕ್ಯಾನ್ ಅಥವಾ ನಿರಂತರ ಮೋಡ್; ವ್ಯಾಪಕವಾಗಿ ಲಭ್ಯ</td><td>ವೆಚ್ಚ-ಪ್ರಜ್ಞೆಯ ಬಳಕೆದಾರರು; T2D; CGM ಆರಂಭಿಕರು</td></tr>
+<tr><td><strong>FreeStyle Libre 3</strong></td><td>14 ದಿನಗಳು</td><td>ಫ್ಯಾಕ್ಟರಿ-ಕ್ಯಾಲಿಬ್ರೇಟೆಡ್</td><td>ಅತಿ ಚಿಕ್ಕ ಸೆನ್ಸಾರ್ (2 ಜೋಡಿಸಿದ ನಾಣ್ಯಗಳ ಗಾತ್ರ); ನೈಜ-ಸಮಯ ನಿರಂತರ ರೀಡಿಂಗ್‌ಗಳು; ಫೋನ್‌ಗೆ Bluetooth</td><td>ಗೌಪ್ಯತೆ ಬಯಸುವವರು; ನಿರಂತರ ಡೇಟಾ</td></tr>
+<tr><td><strong>Dexcom G7</strong></td><td>10 ದಿನಗಳು</td><td>ಫ್ಯಾಕ್ಟರಿ-ಕ್ಯಾಲಿಬ್ರೇಟೆಡ್</td><td>30-ನಿಮಿಷ ವಾರ್ಮ್‌ಅಪ್; ಅತ್ಯುತ್ತಮ ನಿಖರತೆ; insulin ಪಂಪ್‌ಗಳೊಂದಿಗೆ (Control-IQ, Omnipod 5) ಸಂಯೋಜನೆ; ಊಹಾತ್ಮಕ ಎಚ್ಚರಿಕೆಗಳು</td><td>T1D; ಪಂಪ್ ಬಳಕೆದಾರರು; Apple Watch ಸಂಯೋಜನೆ</td></tr>
+<tr><td><strong>Medtronic Guardian 4</strong></td><td>7 ದಿನಗಳು</td><td>ಫ್ಯಾಕ್ಟರಿ-ಕ್ಯಾಲಿಬ್ರೇಟೆಡ್</td><td>SmartGuard ಸ್ವಯಂಚಾಲಿತ insulin ವಿತರಣೆಗಾಗಿ Medtronic 780G ಪಂಪ್‌ನೊಂದಿಗೆ ಜೋಡಿ</td><td>Medtronic ಪಂಪ್ ಬಳಕೆದಾರರು; ಕ್ಲೋಸ್ಡ್-ಲೂಪ್ ವ್ಯವಸ್ಥೆಗಳು</td></tr>
+<tr><td><strong>Eversense E3</strong></td><td>6 ತಿಂಗಳು (ಅಳವಡಿಸಲಾಗಿದೆ)</td><td>ದಿನಕ್ಕೆ 1x ಬೆರಳು ಚುಚ್ಚುವಿಕೆ</td><td>ಅಳವಡಿಸಲಾದ ಸೆನ್ಸಾರ್; ದೇಹದ ಮೇಲೆ ಕಂಪನ ಎಚ್ಚರಿಕೆಗಳು; ಉದ್ದವಾದ ಅವಧಿ; ತೆಗೆಯಬಹುದಾದ ಟ್ರಾನ್ಸ್‌ಮಿಟರ್</td><td>ಕಡಿಮೆ ಸೇರ್ಪಡೆಗಳು ಬಯಸುವವರು; ಸಕ್ರಿಯ ಜೀವನಶೈಲಿ</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>ತ್ವರಿತ ಹೋಲಿಕೆ ಸಾರಾಂಶ</h3>
+<ul>
+<li><strong>ಅತ್ಯಂತ ಕೈಗೆಟಕುವ:</strong> FreeStyle Libre 2</li>
+<li><strong>ಅತ್ಯುತ್ತಮ ನಿಖರತೆ:</strong> Dexcom G7</li>
+<li><strong>ಅತಿ ಚಿಕ್ಕ/ಅತ್ಯಂತ ಗೌಪ್ಯ:</strong> FreeStyle Libre 3</li>
+<li><strong>ಉದ್ದವಾದ ಸೆನ್ಸಾರ್ ಅವಧಿ:</strong> Eversense E3 (6 ತಿಂಗಳು)</li>
+<li><strong>ಪಂಪ್ ಸಂಯೋಜನೆಗೆ ಅತ್ಯುತ್ತಮ:</strong> Dexcom G7 (Tandem, Omnipod) ಅಥವಾ Guardian 4 (Medtronic)</li>
+</ul>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F1EE;&#x1F1F3;</span> ಭಾರತದಲ್ಲಿ CGM ಲಭ್ಯತೆ</h2>
+
+<h3>ಎಲ್ಲಿ ಖರೀದಿಸಬಹುದು</h3>
+<ul>
+<li><strong>ಆಸ್ಪತ್ರೆ ಫಾರ್ಮಸಿಗಳು:</strong> ಪ್ರಮುಖ ಮಧುಮೇಹ ಕೇಂದ್ರಗಳು ಮತ್ತು ಅಂತಃಸ್ರಾವಶಾಸ್ತ್ರ ವಿಭಾಗಗಳು CGM ವ್ಯವಸ್ಥೆಗಳನ್ನು ಸ್ಟಾಕ್ ಮಾಡುತ್ತವೆ.</li>
+<li><strong>ಆನ್‌ಲೈನ್ ವೈದ್ಯಕೀಯ ಅಂಗಡಿಗಳು:</strong> NetMeds, PharmEasy, 1mg, Apollo Pharmacy — ಲಭ್ಯತೆ ಬದಲಾಗುತ್ತದೆ.</li>
+<li><strong>ಅಧಿಕೃತ ವಿತರಕರು:</strong> Abbott (FreeStyle Libre), Dexcom (ಆಯ್ದ ಪಾಲುದಾರರ ಮೂಲಕ).</li>
+<li><strong>ವೈದ್ಯರ ಪ್ರಿಸ್ಕ್ರಿಪ್ಷನ್:</strong> ಹೆಚ್ಚಿನ ಸಂದರ್ಭಗಳಲ್ಲಿ ಖರೀದಿಗೆ ಅಗತ್ಯ.</li>
+</ul>
+
+<h3>ಅಂದಾಜು ವೆಚ್ಚಗಳು (2026)</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>ವ್ಯವಸ್ಥೆ</th><th>ಸೆನ್ಸಾರ್ ವೆಚ್ಚ (ಪ್ರತಿ ಯೂನಿಟ್)</th><th>ರೀಡರ್/ಟ್ರಾನ್ಸ್‌ಮಿಟರ್</th><th>ಮಾಸಿಕ ವೆಚ್ಚ ಅಂದಾಜು</th></tr>
+</thead>
+<tbody>
+<tr><td>FreeStyle Libre 2</td><td>Rs. 2,500–3,500</td><td>Rs. 5,000–6,000 (ರೀಡರ್‌ಗೆ ಒಮ್ಮೆ) ಅಥವಾ ಸ್ಮಾರ್ಟ್‌ಫೋನ್ ಆಪ್ ಬಳಸಿ</td><td>Rs. 5,000–7,000 (2 ಸೆನ್ಸಾರ್/ತಿಂಗಳು)</td></tr>
+<tr><td>FreeStyle Libre 3</td><td>Rs. 3,000–4,000</td><td>ಸ್ಮಾರ್ಟ್‌ಫೋನ್ ಆಪ್ ಮಾತ್ರ (ರೀಡರ್ ಇಲ್ಲ)</td><td>Rs. 6,000–8,000 (2 ಸೆನ್ಸಾರ್/ತಿಂಗಳು)</td></tr>
+<tr><td>Dexcom G7</td><td>Rs. 8,000–12,000</td><td>ಸ್ಮಾರ್ಟ್‌ಫೋನ್ ಆಪ್ ಅಥವಾ ರಿಸೀವರ್</td><td>Rs. 24,000–36,000 (3 ಸೆನ್ಸಾರ್/ತಿಂಗಳು)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F3AF;</span> CGM ಡೇಟಾ ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು</h2>
+
+<h3>Time in Range (TIR)</h3>
+<p>Time in Range ಅತ್ಯಂತ ಮುಖ್ಯ CGM ಮೆಟ್ರಿಕ್. ಇದು ನಿಮ್ಮ glucose ನಿಮ್ಮ ಗುರಿ ವ್ಯಾಪ್ತಿಯಲ್ಲಿ — ಸಾಮಾನ್ಯವಾಗಿ <strong>70–180 mg/dL (3.9–10.0 mmol/L)</strong> — ದಿನದ ಎಷ್ಟು ಶೇಕಡಾವಾರು ಇದೆ ಎಂಬುದನ್ನು ಹೇಳುತ್ತದೆ.</p>
+
+<h3>ಅಂತರರಾಷ್ಟ್ರೀಯ ಒಮ್ಮತ ಗುರಿಗಳು</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>ಮೆಟ್ರಿಕ್</th><th>ಗುರಿ</th><th>ವ್ಯಾಪ್ತಿ</th></tr>
+</thead>
+<tbody>
+<tr><td>Time in Range (TIR)</td><td>&gt; 70%</td><td>70–180 mg/dL</td></tr>
+<tr><td>ವ್ಯಾಪ್ತಿಗಿಂತ ಕಡಿಮೆ ಸಮಯ (TBR)</td><td>&lt; 4%</td><td>&lt; 70 mg/dL</td></tr>
+<tr><td>ಗಮನಾರ್ಹವಾಗಿ ಕಡಿಮೆ ಸಮಯ</td><td>&lt; 1%</td><td>&lt; 54 mg/dL</td></tr>
+<tr><td>ವ್ಯಾಪ್ತಿಗಿಂತ ಮೇಲೆ ಸಮಯ (TAR)</td><td>&lt; 25%</td><td>&gt; 180 mg/dL</td></tr>
+<tr><td>ಗಮನಾರ್ಹವಾಗಿ ಮೇಲೆ ಸಮಯ</td><td>&lt; 5%</td><td>&gt; 250 mg/dL</td></tr>
+<tr><td>Glucose ವೇರಿಯಬಿಲಿಟಿ (CV)</td><td>&le; 36%</td><td>Coefficient of variation</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="note">
+<strong>TIR ಮತ್ತು HbA1c:</strong> 70% Time in Range ಸರಿಸುಮಾರು 7.0% HbA1c ಗೆ ಅನುರೂಪವಾಗಿದೆ. TIR ನಲ್ಲಿ ಪ್ರತಿ 5% ಹೆಚ್ಚಳವು ಮಧುಮೇಹ ತೊಡಕುಗಳಲ್ಲಿ ವೈದ್ಯಕೀಯವಾಗಿ ಅರ್ಥಪೂರ್ಣ ಕಡಿತಗಳೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದೆ. TIR ಪ್ರತಿ 3 ತಿಂಗಳಿಗೊಮ್ಮೆ ಅಳೆಯುವ HbA1c ಒದಗಿಸಲಾಗದ ಕ್ರಿಯಾಶೀಲ, ನೈಜ-ಸಮಯ ಪ್ರತಿಕ್ರಿಯೆ ನೀಡುತ್ತದೆ.
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F4C8;</span> ನಿಮ್ಮ ಟ್ರೆಂಡ್‌ಗಳನ್ನು ಓದುವುದು — ಬಾಣಗಳು ಮತ್ತು ಮಾದರಿಗಳು</h2>
+
+<h3>ಟ್ರೆಂಡ್ ಬಾಣಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು</h3>
+<p>ಟ್ರೆಂಡ್ ಬಾಣಗಳು CGM ನ ಅತ್ಯಂತ ಶಕ್ತಿಶಾಲಿ ವೈಶಿಷ್ಟ್ಯಗಳಲ್ಲಿ ಒಂದು. ಅವು glucose ಬದಲಾವಣೆಯ ದಿಕ್ಕು ಮತ್ತು ವೇಗವನ್ನು ತೋರಿಸುತ್ತವೆ:</p>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>ಬಾಣ</th><th>ಅರ್ಥ</th><th>ಬದಲಾವಣೆ ದರ</th><th>ಕ್ರಮ ಪರಿಗಣನೆ</th></tr>
+</thead>
+<tbody>
+<tr><td>&uarr;&uarr; (ಡಬಲ್ ಅಪ್)</td><td>ವೇಗವಾಗಿ ಏರುತ್ತಿದೆ</td><td>&gt; 3 mg/dL/ನಿಮಿಷ (180 mg/dL/ಗಂಟೆ)</td><td>ಗುರಿಗಿಂತ ಮೇಲಿದ್ದರೆ ತಿದ್ದುಪಡಿ ಡೋಸ್ ಪರಿಗಣಿಸಿ; ತಪ್ಪಿದ bolus ಪರಿಶೀಲಿಸಿ</td></tr>
+<tr><td>&nearr; (ಸಿಂಗಲ್ ಅಪ್/ಡಯಾಗನಲ್)</td><td>ಏರುತ್ತಿದೆ</td><td>2–3 mg/dL/ನಿಮಿಷ</td><td>ಹತ್ತಿರದಿಂದ ಮಾನಿಟರ್ ಮಾಡಿ; ಹೆಚ್ಚು ಟ್ರೆಂಡಿಂಗ್ ಆಗುತ್ತಿದ್ದರೆ ಕ್ರಮ ಅಗತ್ಯವಿರಬಹುದು</td></tr>
+<tr><td>&rarr; (ಫ್ಲಾಟ್/ಅಡ್ಡ)</td><td>ಸ್ಥಿರ</td><td>&lt; 1 mg/dL/ನಿಮಿಷ</td><td>ಆದರ್ಶ — glucose ಸ್ಥಿರವಾಗಿದೆ</td></tr>
+<tr><td>&searr; (ಸಿಂಗಲ್ ಡೌನ್/ಡಯಾಗನಲ್)</td><td>ಕುಸಿಯುತ್ತಿದೆ</td><td>2–3 mg/dL/ನಿಮಿಷ</td><td>ಕಡಿಮೆಗೆ ಹತ್ತಿರವಾಗುತ್ತಿದ್ದರೆ, ತಡೆಗಟ್ಟುವ ತಿಂಡಿ ಪರಿಗಣಿಸಿ</td></tr>
+<tr><td>&darr;&darr; (ಡಬಲ್ ಡೌನ್)</td><td>ವೇಗವಾಗಿ ಕುಸಿಯುತ್ತಿದೆ</td><td>&gt; 3 mg/dL/ನಿಮಿಷ</td><td>ತುರ್ತು — ಇನ್ನೂ ಕಡಿಮೆ ಇಲ್ಲದಿದ್ದರೂ ತ್ವರಿತ-ಕ್ರಿಯೆ carbs ತಿನ್ನಿ</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>ಸಾಮಾನ್ಯ ಮಾದರಿಗಳು ಮತ್ತು ಅವುಗಳ ಅರ್ಥ</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>ಮಾದರಿ</th><th>ಹೇಗೆ ಕಾಣುತ್ತದೆ</th><th>ಸಂಭಾವ್ಯ ಕಾರಣಗಳು</th><th>ಸಂಭಾವ್ಯ ಪರಿಹಾರಗಳು</th></tr>
+</thead>
+<tbody>
+<tr><td>Dawn phenomenon</td><td>ತಿನ್ನದೆ 4–8 AM ಗೆ Glucose ಏರುತ್ತದೆ</td><td>ಮುಂಜಾನೆ ಹಾರ್ಮೋನ್ ಏರಿಕೆ (cortisol, growth hormone)</td><td>Basal insulin ಸಮಯ/ಡೋಸ್ ಹೊಂದಿಸಿ; ತಡರಾತ್ರಿ ತಿಂಡಿ ತಪ್ಪಿಸಿ</td></tr>
+<tr><td>ಊಟದ ನಂತರ ಸ್ಪೈಕ್‌ಗಳು</td><td>ತಿಂದ 30–90 ನಿಮಿಷ ನಂತರ ತೀವ್ರ ಏರಿಕೆ</td><td>ತುಂಬಾ carbs; ಸಾಕಷ್ಟಿಲ್ಲದ bolus; ತುಂಬಾ ಬೇಗ ತಿನ್ನುವುದು; bolus ಸಮಯ</td><td>ಊಟಕ್ಕೆ 15–20 ನಿಮಿಷ ಮೊದಲು Pre-bolus; carbs ಕಡಿಮೆ ಮಾಡಿ; ಫೈಬರ್/ಪ್ರೋಟೀನ್ ಸೇರಿಸಿ</td></tr>
+<tr><td>ರಾತ್ರಿಯ ಕಡಿಮೆಗಳು</td><td>ನಿದ್ದೆಯಲ್ಲಿ Glucose ಕುಸಿಯುತ್ತದೆ (ಸಾಮಾನ್ಯವಾಗಿ 2–4 AM)</td><td>ಅತಿಯಾದ basal insulin; ಸಂಜೆ ವ್ಯಾಯಾಮ; ಮದ್ಯ</td><td>Basal ಕಡಿಮೆ ಮಾಡಿ; ಪ್ರೋಟೀನ್‌ನೊಂದಿಗೆ ಮಲಗುವ ಸಮಯದ ತಿಂಡಿ; ಸಂಜೆ ವ್ಯಾಯಾಮ ಸಮಯ ಹೊಂದಿಸಿ</td></tr>
+<tr><td>ರೋಲರ್ ಕೋಸ್ಟರ್</td><td>ದಿನವಿಡೀ ಆಗಾಗ್ಗೆ ಹೆಚ್ಚು ಮತ್ತು ಕಡಿಮೆ</td><td>ಹೆಚ್ಚುಗಳನ್ನು ಅತಿ-ತಿದ್ದುಪಡಿ; ಕಡಿಮೆಯ ನಂತರ ರೀಬೌಂಡ್ ತಿನ್ನುವಿಕೆ; ಅಸಂಗತ ಊಟ</td><td>"15 ನಿಯಮ" ಅನುಸರಿಸಿ; ತಿದ್ದುಪಡಿ ಮಾಡುವ ಮೊದಲು ಕಾಯಿರಿ; ಊಟ ಸ್ಥಿರತೆ ಸುಧಾರಿಸಿ</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="tip">
+<strong>ಮಾದರಿ ಗುರುತಿಸುವಿಕೆ ಸಲಹೆ:</strong> ಕನಿಷ್ಠ 14 ದಿನಗಳ ಡೇಟಾಗೆ ನಿಮ್ಮ AGP ವರದಿ ನೋಡಿ. ಏಕ-ದಿನ ಸ್ಪೈಕ್‌ಗಳು ಅಥವಾ ಕಡಿಮೆಗಳು ಒಂದು-ಬಾರಿ ಘಟನೆಗಳಾಗಿರಬಹುದು (ತಪ್ಪಿದ ಡೋಸ್, ಅಸಾಮಾನ್ಯ ಊಟ). ನಿಜವಾದ ಮಾದರಿಗಳು ಬಹು ದಿನಗಳಲ್ಲಿ ದಿನದ ಅದೇ ಸಮಯದಲ್ಲಿ ಸ್ಥಿರವಾಗಿ ಪುನರಾವರ್ತಿಸುತ್ತವೆ. ದೃಢೀಕರಿಸಿದ ಮಾದರಿಗಳ ಆಧಾರದ ಮೇಲೆ ಮಾತ್ರ insulin ಹೊಂದಿಸಿ (3+ ದಿನಗಳಲ್ಲಿ ಅದೇ ಸಮಸ್ಯೆ).
+</div>
+</div>
+
+<div class="section">
+<h2><span class="icon-sm">&#x1F514;</span> ಎಚ್ಚರಿಕೆಗಳು ಮತ್ತು ಅಲಾರಮ್‌ಗಳು</h2>
+<p>CGM ಎಚ್ಚರಿಕೆಗಳು ಜೀವ ರಕ್ಷಿಸಬಹುದು, ಆದರೆ ಸೂಕ್ತವಾಗಿ ಹೊಂದಿಸದಿದ್ದರೆ ಅವು ಅಗಾಧವಾಗಬಹುದು. ಸರಿಯಾದ ಸಮತೋಲನ ಕಂಡುಕೊಳ್ಳುವುದು "ಅಲಾರಮ್ ಆಯಾಸ"ವನ್ನು ತಡೆಯುತ್ತದೆ.</p>
+
+<h3>ಎಚ್ಚರಿಕೆಗಳ ಪ್ರಕಾರಗಳು</h3>
+<ul>
+<li><strong>ಕಡಿಮೆ glucose ಎಚ್ಚರಿಕೆ:</strong> Glucose ನಿಗದಿತ ಮಿತಿಗಿಂತ ಕೆಳಗೆ ಬಿದ್ದಾಗ ಪ್ರಚೋದಿಸುತ್ತದೆ (ಸಾಮಾನ್ಯವಾಗಿ 70–80 mg/dL).</li>
+<li><strong>ತುರ್ತು ಕಡಿಮೆ ಎಚ್ಚರಿಕೆ:</strong> ನಿರ್ಣಾಯಕವಾಗಿ ಕಡಿಮೆ ಮಟ್ಟದಲ್ಲಿ ಪ್ರಚೋದಿಸುತ್ತದೆ (ಸಾಮಾನ್ಯವಾಗಿ 55 mg/dL) — ಇದನ್ನು ಎಂದಿಗೂ ಮೌನಗೊಳಿಸಬಾರದು.</li>
+<li><strong>ಹೆಚ್ಚಿನ glucose ಎಚ್ಚರಿಕೆ:</strong> Glucose ನಿಗದಿತ ಮಿತಿಗಿಂತ ಮೇಲೆ ಏರಿದಾಗ ಪ್ರಚೋದಿಸುತ್ತದೆ (ಸಾಮಾನ್ಯವಾಗಿ 180–250 mg/dL).</li>
+<li><strong>ಊಹಾತ್ಮಕ ಕಡಿಮೆ ಎಚ್ಚರಿಕೆ:</strong> ಮುಂದಿನ 10–20 ನಿಮಿಷಗಳಲ್ಲಿ glucose ಕಡಿಮೆಯಾಗುವ ಸಾಧ್ಯತೆಯಿದೆ ಎಂದು ಎಚ್ಚರಿಸುತ್ತದೆ, ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳಲು ಸಮಯ ನೀಡುತ್ತದೆ.</li>
+<li><strong>ಬದಲಾವಣೆ ದರ ಎಚ್ಚರಿಕೆಗಳು:</strong> Glucose ವೇಗವಾಗಿ ಏರುತ್ತಿರುವಾಗ ಅಥವಾ ಕುಸಿಯುತ್ತಿರುವಾಗ ಎಚ್ಚರಿಸುತ್ತದೆ.</li>
+</ul>
+
+<div class="warning">
+<strong>ತುರ್ತು ಕಡಿಮೆ ಎಚ್ಚರಿಕೆಯನ್ನು ಎಂದಿಗೂ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಬೇಡಿ.</strong> ಈ ಎಚ್ಚರಿಕೆ ಜೀವ ರಕ್ಷಿಸಬಹುದು, ವಿಶೇಷವಾಗಿ ರಾತ್ರಿಯಲ್ಲಿ. ಅಲಾರಮ್ ಆಯಾಸ ನಿಜವಾದ ಸಮಸ್ಯೆ, ಆದರೆ ಪರಿಹಾರವೆಂದರೆ glucose ನಿಯಂತ್ರಣವನ್ನು ಸುಧಾರಿಸುವುದು ಮತ್ತು ಇತರ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಹೊಂದಿಸುವುದು — ನಿರ್ಣಾಯಕ ಸುರಕ್ಷತಾ ಅಲಾರಮ್‌ಗಳನ್ನು ಮೌನಗೊಳಿಸುವುದಲ್ಲ.
+</div>
+</div>
+
+<div class="section see-also"><h3>ಸಂಬಂಧಿತ ವಿಷಯಗಳು</h3><ul>
+<li><a href="blood-sugar-monitoring.html">ರಕ್ತ ಸಕ್ಕರೆ ಮಾನಿಟರಿಂಗ್</a></li>
+<li><a href="insulin-guide.html">Insulin ಮಾರ್ಗದರ್ಶಿ</a></li>
+<li><a href="hypoglycemia.html">Hypoglycemia</a></li>
+<li><a href="tracking-tools.html">ಟ್ರ್ಯಾಕಿಂಗ್ ಪರಿಕರಗಳು</a></li>
+</ul></div>
+<div class="page-nav">
+<a class="prev" href="blood-sugar-monitoring.html">ರಕ್ತ ಸಕ್ಕರೆ ಮಾನಿಟರಿಂಗ್</a>
+<a class="next" href="insulin-pumps-kn.html">Insulin ಪಂಪ್‌ಗಳು</a>
+</div>
+</div>
+<div class="disclaimer">ಈ ವಿಷಯವು ಶೈಕ್ಷಣಿಕ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಮಾತ್ರ ಮತ್ತು ವೃತ್ತಿಪರ ವೈದ್ಯಕೀಯ ಸಲಹೆಯನ್ನು ಬದಲಿಸುವುದಿಲ್ಲ. ಶುಗರ್‌ವೈಸ್ ಸೃಷ್ಟಿಕರ್ತರು ವೈದ್ಯಕೀಯ ವೃತ್ತಿಪರರಲ್ಲ. ನಿಮ್ಮ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸದೆ ಯಾವುದೇ ಔಷಧಿಯನ್ನು ಪ್ರಾರಂಭಿಸಬೇಡಿ, ನಿಲ್ಲಿಸಬೇಡಿ ಅಥವಾ ಬದಲಾಯಿಸಬೇಡಿ. ತುರ್ತು ಸಂದರ್ಭದಲ್ಲಿ, 112 (ಭಾರತ) ಅಥವಾ ನಿಮ್ಮ ಸ್ಥಳೀಯ ತುರ್ತು ಸಂಖ್ಯೆಗೆ ಕರೆ ಮಾಡಿ. <a href="terms-of-use-kn.html">ಸಂಪೂರ್ಣ ಬಳಕೆಯ ನಿಯಮಗಳು &amp; ವೈದ್ಯಕೀಯ ಹಕ್ಕುನಿರಾಕರಣೆ ಓದಿ</a></div>
+<div class="privacy-notice">ಶುಗರ್‌ವೈಸ್ cookies ಬಳಸುವುದಿಲ್ಲ, ವೈಯಕ್ತಿಕ ಡೇಟಾ ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ, ಅಥವಾ ಬಳಕೆದಾರರನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡುವುದಿಲ್ಲ.</div>
+<div class="footer"><span class="ai-badge">AI-ಸಹಾಯಿತ ವಿಷಯ</span><br>ಶುಗರ್‌ವೈಸ್ &bull; ಸಮಗ್ರ ಮಧುಮೇಹ ನಿರ್ವಹಣೆ ಸಂಗಾತಿ &bull; <a href="terms-of-use-kn.html">ಬಳಕೆಯ ನಿಯಮಗಳು</a> &bull; ಕೊನೆಯದಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ: ಜನವರಿ 2026</div>
+<button class="theme-toggle" id="themeToggle" aria-label="ಡಾರ್ಕ್ ಮೋಡ್ ಟಾಗಲ್ ಮಾಡಿ" title="ಡಾರ್ಕ್ ಮೋಡ್ ಟಾಗಲ್ ಮಾಡಿ">&#9790;</button>
+<button class="scroll-top" aria-label="ಮೇಲಕ್ಕೆ ಸ್ಕ್ರಾಲ್ ಮಾಡಿ" id="scrollTop" title="ಮೇಲಕ್ಕೆ ಹಿಂತಿರುಗಿ">&uarr;</button>
+<script>
+var sb=document.getElementById('scrollTop');window.addEventListener('scroll',function(){sb.classList.toggle('visible',window.scrollY>400)});sb.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+document.querySelectorAll('.accordion-header').forEach(function(h){h.addEventListener('click',function(){this.parentElement.classList.toggle('open')})});
+</script>
+<script>
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}
+(function(){var t=document.getElementById('themeToggle');var saved=localStorage.getItem('theme');if(saved){document.documentElement.setAttribute('data-theme',saved);t.textContent=saved==='dark'?'\u2600':'\u263E';}t.addEventListener('click',function(){var d=document.documentElement.getAttribute('data-theme')==='dark'?'':'dark';document.documentElement.setAttribute('data-theme',d);localStorage.setItem('theme',d);t.textContent=d==='dark'?'\u2600':'\u263E';});})();
+</script></body></html>
