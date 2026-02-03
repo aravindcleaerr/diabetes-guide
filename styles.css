@@ -1,5 +1,8 @@
 /* SugarWise — Enhanced Visual Styles with Animations */
 
+/* ---- GOOGLE FONTS (Kannada support) ---- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;600;700&display=swap');
+
 /* ---- SKIP LINK (Accessibility) ---- */
 .skip-link {
   position: absolute;
@@ -42,7 +45,7 @@
 html { font-size: 16px; scroll-behavior: smooth; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Noto Sans Kannada', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.7;
@@ -174,6 +177,21 @@ body {
   background: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.6);
   transform: translateY(-1px);
+}
+.navbar a.lang-switch {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 6px;
+  margin-left: 0.5rem;
+  transition: all 0.25s ease;
+}
+.navbar a.lang-switch:hover {
+  background: rgba(255,255,255,0.25);
+  border-color: rgba(255,255,255,0.5);
 }
 
 /* ---- MAIN CONTAINER ---- */
@@ -1014,9 +1032,44 @@ tr:last-child td { border-bottom: none; }
 
 /* ---- PRINT STYLES ---- */
 @media print {
-  .navbar, .page-nav, .scroll-top, .search-box { display: none; }
-  .section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
-  body { background: white; }
-  .hero { background: var(--primary) !important; animation: none; }
-  * { animation: none !important; }
+  /* Hide non-essential elements */
+  .navbar, .page-nav, .scroll-top, .search-box, .theme-toggle, .skip-link,
+  .card-grid, .stats-bar, .checklist, .gauge-row, .illus svg { display: none !important; }
+
+  /* Reset backgrounds and colors for ink-saving */
+  body { background: white !important; color: black !important; font-size: 11pt; line-height: 1.5; }
+  .container { max-width: 100%; padding: 0; }
+  .page-header { background: none !important; color: black !important; padding: 1rem 0; border-bottom: 2px solid #1a7a5a; }
+  .page-header h1 { color: #1a7a5a !important; font-size: 18pt; }
+  .page-header p { color: #666 !important; }
+
+  /* Sections */
+  .section { break-inside: avoid; box-shadow: none !important; border: 1px solid #ccc; margin-bottom: 1rem; padding: 0.75rem; background: white !important; }
+  .section h2 { font-size: 12pt; color: #1a7a5a !important; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+  .section p, .section li { font-size: 10pt; }
+
+  /* Callout boxes - simplified for print */
+  .note, .tip, .warning, .danger { border-left: 4px solid; padding: 0.5rem; margin: 0.5rem 0; background: #f9f9f9 !important; }
+  .note { border-color: #3182ce; }
+  .tip { border-color: #38a169; }
+  .warning { border-color: #e8913a; }
+  .danger { border-color: #e53e3e; }
+
+  /* Footer and disclaimer */
+  .disclaimer { background: none !important; border: 1px solid #e8913a; padding: 0.5rem; font-size: 9pt; }
+  .footer, .privacy-notice, .ai-badge { display: none !important; }
+
+  /* Links - show URLs */
+  a[href]:after { content: " (" attr(href) ")"; font-size: 8pt; color: #666; }
+  a[href^="#"]:after, a[href^="javascript"]:after { content: ""; }
+
+  /* Page breaks */
+  h2 { page-break-after: avoid; }
+  .section { page-break-inside: avoid; }
+
+  /* Print header/footer */
+  @page { margin: 1.5cm; }
+
+  /* Disable animations */
+  * { animation: none !important; transition: none !important; }
 }
